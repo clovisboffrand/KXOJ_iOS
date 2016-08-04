@@ -150,7 +150,7 @@
 		09CA0B881D0123B7006AFFCD /* RecentSongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSongViewController.h; sourceTree = "<group>"; };
 		09CA0B891D0123B7006AFFCD /* RecentSongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSongViewController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Bristol Beat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bristol Beat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* KXOJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KXOJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4A05E3891B5A2865000E7305 /* CommonHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelpers.h; sourceTree = "<group>"; };
@@ -407,7 +407,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Bristol Beat.app */,
+				1D6058910D05DD3D006BFB54 /* KXOJ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -579,7 +579,7 @@
 			);
 			name = WJRS;
 			productName = radio99;
-			productReference = 1D6058910D05DD3D006BFB54 /* Bristol Beat.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* KXOJ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -782,7 +782,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = comRadioservers.kxoj;
-				PRODUCT_NAME = "Bristol Beat";
+				PRODUCT_NAME = KXOJ;
 				PROVISIONING_PROFILE = "0e08c94d-78f5-42ee-8d32-0912901a0260";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0e08c94d-78f5-42ee-8d32-0912901a0260";
 				SDKROOT = iphoneos;
@@ -812,7 +812,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = comRadioservers.kxoj;
-				PRODUCT_NAME = "Bristol Beat";
+				PRODUCT_NAME = KXOJ;
 				PROVISIONING_PROFILE = "3f61599e-7f1e-4090-9215-63bbe8e78e93";
 				"PROVISIONING_PROFILE[sdk=*]" = "3f61599e-7f1e-4090-9215-63bbe8e78e93";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3f61599e-7f1e-4090-9215-63bbe8e78e93";
