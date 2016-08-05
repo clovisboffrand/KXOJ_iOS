@@ -1305,7 +1305,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.074509803921568626" green="0.0039215686274509803" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.054901960784313725" green="0.11764705882352941" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
