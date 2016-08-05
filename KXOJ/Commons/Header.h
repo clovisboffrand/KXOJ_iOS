@@ -33,7 +33,7 @@
 
 #define HIDE_INDICATOR(animated)    [GET_INDICATOR hideWithAnimation:animated]
 
-#define TINT_DEF_COLR               @"13016c"
+#define TINT_DEF_COLR               @"c4026c"
 
 #define STREAM_URL                  @"http://ice9.securenetsystems.net/BEAT"
 #define FEED_URL                    @"https://streamdb7web.securenetsystems.net/player_status_update/BEAT_history_rss.xml"
