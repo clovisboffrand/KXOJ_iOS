@@ -11,8 +11,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 
-#define SAMPLE_LINK @"http://www.bristolbeat.com/app/sample.mp3"
-#define UPLOAD_LINK @"http://radioserversapps.com/bristolbeat/app/upload.php"
+#define SAMPLE_LINK @"https://s3.amazonaws.com/radioservers/apps/KXOJ/sample.mp3"
+#define UPLOAD_LINK @"http://kxojlisteners.com/app/upload.php"
+
 
 @interface ShoutOutViewController() <AVAudioPlayerDelegate, AVAudioRecorderDelegate>
 
@@ -34,7 +35,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadNib];
+    
+    INIT_INDICATOR;
+    isRecording = NO;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -42,48 +45,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"playRadio" object:nil];
 }
 
-#pragma mark - Method
-- (void)loadNib {
-    INIT_INDICATOR;
-    isRecording = NO;
-}
-
-- (void)startRecording {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"pauseRadio" object:nil];
-    [self initRecord];
-    
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setActive:YES error:nil];
-    
-    // Start recording
-    [audioRecorder record];
-    isRecording = YES;
-    self.btnRecord.selected = YES;
-    [self.btnRecord setTitle:@"Stop Recording" forState:UIControlStateNormal];
-    [self.btnRecord setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.btnPreview.enabled = NO;
-    self.btnSample.enabled = NO;
-    self.btnSend.enabled = NO;
-}
-
-- (void)stopRecording {
-    self.btnRecord.selected = NO;
-    [self.btnRecord setTitle:@"Record Your Voice" forState:UIControlStateNormal];
-    [self.btnRecord setTitleColor:UIColorWithHexCode(TINT_DEF_COLR, 1) forState:UIControlStateNormal];
-    
-    isRecording = NO;
-    [audioRecorder stop];
-    
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
-    [audioSession setActive:NO error:nil];
-}
-
-- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
-    self.btnPreview.enabled = YES;
-    self.btnSample.enabled = YES;
-    self.btnSend.enabled = YES;
-}
+#pragma mark - Button Action Methods
 
 - (IBAction)doRecord:(id)sender {
     if (isRecording) {
@@ -108,18 +70,6 @@
     [theAudio play];
 }
 
-- (void)playMusic {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"pauseRadio" object:nil];
-    [theAudio play];
-}
-
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-}
-
-- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error {
-    NSLog(@"ERROR %@", error.localizedDescription);
-}
-
 - (IBAction)doSend:(id)sender {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *recDir = [paths objectAtIndex:0];
@@ -142,7 +92,7 @@
         
         HIDE_INDICATOR(YES);
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"THANK YOU!" message:@"Thanks for sharing! Listen to Bristol Beat and you might hear yourself on the radio!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"THANK YOU!" message:@"Thanks for sharing! Listen to KXOJ and you might hear yourself on the radio!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error: %@", error);
@@ -176,6 +126,26 @@
     [theAudio play];
 }
 
+#pragma mark - Recording Methods
+
+- (void)startRecording {
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"pauseRadio" object:nil];
+    [self initRecord];
+    
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    
+    // Start recording
+    [audioRecorder record];
+    isRecording = YES;
+    self.btnRecord.selected = YES;
+    [self.btnRecord setTitle:@"Stop Recording" forState:UIControlStateNormal];
+    [self.btnRecord setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.btnPreview.enabled = NO;
+    self.btnSample.enabled = NO;
+    self.btnSend.enabled = NO;
+}
+
 - (void)initRecord {
     audioRecorder = nil;
     
@@ -198,6 +168,43 @@
     audioRecorder.delegate = self;
     audioRecorder.meteringEnabled = YES;
     [audioRecorder prepareToRecord];
+}
+
+- (void)stopRecording {
+    self.btnRecord.selected = NO;
+    [self.btnRecord setTitle:@"Record Your Voice" forState:UIControlStateNormal];
+    [self.btnRecord setTitleColor:UIColorWithHexCode(TINT_DEF_COLR, 1) forState:UIControlStateNormal];
+    
+    isRecording = NO;
+    [audioRecorder stop];
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
+    [audioSession setActive:NO error:nil];
+}
+
+#pragma mark - AVAudioRecorderDelegate Methods
+
+- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
+    NSLog(@"audioRecorderDidFinishRecording");
+    
+    self.btnPreview.enabled = YES;
+    self.btnSample.enabled = YES;
+    self.btnSend.enabled = YES;
+}
+
+- (void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError *)error {
+    NSLog(@"audioRecorderEncodeErrorDidOccur");
+}
+
+#pragma mark - AVAudioPlayerDelegate Methods
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    
+}
+
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error {
+    NSLog(@"ERROR %@", error.localizedDescription);
 }
 
 @end
