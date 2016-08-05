@@ -8,11 +8,13 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Radio-->
+        <!--Navigation Controller-->
         <scene sceneID="uoF-bt-eJR">
             <objects>
                 <navigationController navigationBarHidden="YES" id="EFv-Ky-AQq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Radio" image="icon_radio.png" id="ERy-dv-Wz7"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_radio.png" id="ERy-dv-Wz7">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OaM-IO-j0y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,11 +27,13 @@
             </objects>
             <point key="canvasLocation" x="-327" y="-20"/>
         </scene>
-        <!--Website-->
+        <!--Navigation Controller-->
         <scene sceneID="IsT-Db-9Tb">
             <objects>
                 <navigationController id="CAl-i2-bbB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Website" image="icon_web.png" id="N7d-wC-lHc"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_web.png" id="N7d-wC-lHc">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vf2-FD-E2f" customClass="NavigationBarCustom">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,28 +46,32 @@
             </objects>
             <point key="canvasLocation" x="346" y="-20"/>
         </scene>
-        <!--Alarm-->
+        <!--Navigation Controller-->
         <scene sceneID="AT7-Kj-Zzb">
             <objects>
                 <navigationController id="8zn-VN-14l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alarm" image="icon_alarm.png" id="6XJ-np-duo"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_alarm.png" id="6XJ-np-duo">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ka5-du-YAJ" customClass="NavigationBarCustom">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="7TK-Uk-PKX" kind="relationship" relationship="rootViewController" id="ydT-BT-ljk"/>
+                        <segue destination="7TK-Uk-PKX" kind="relationship" relationship="rootViewController" id="hPg-LN-sgX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yv-Fj-UVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="-20"/>
         </scene>
-        <!--Shout Out-->
+        <!--Navigation Controller-->
         <scene sceneID="ywo-Fh-71j">
             <objects>
                 <navigationController id="ZG2-ed-szL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Shout Out" image="icon_shoutout.png" id="UuH-J8-StK"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_shoutout.png" id="UuH-J8-StK">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5q3-bQ-iW6" customClass="NavigationBarCustom">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -76,11 +84,13 @@
             </objects>
             <point key="canvasLocation" x="2335" y="-20"/>
         </scene>
-        <!--Social-->
+        <!--Navigation Controller-->
         <scene sceneID="IAd-NF-QCd">
             <objects>
                 <navigationController id="ZYh-ps-new" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" image="icon_social.png" id="cIn-FS-rga"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_social.png" id="cIn-FS-rga">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZRR-oR-Um2" customClass="NavigationBarCustom">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -226,7 +236,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Website" image="icon_web.png" id="tU7-no-FV0"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_web.png" id="tU7-no-FV0"/>
                     <navigationItem key="navigationItem" title="Website" id="GNs-nj-KId"/>
                     <connections>
                         <outlet property="adWebView" destination="bQC-mb-K2O" id="ekR-NX-J0x"/>
@@ -1010,20 +1020,20 @@
                         <viewControllerLayoutGuide type="bottom" id="MJ7-RR-tAs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fTE-iM-DbL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bRM-r3-SP6">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoutoutimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-pV-1Si">
-                                <rect key="frame" x="-4" y="64" width="328" height="205"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Bta-pV-1Si" secondAttribute="height" multiplier="320:200" id="OlR-4v-dI8"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DK-fy-7Iy">
-                                <rect key="frame" x="11" y="352" width="298" height="41"/>
+                                <rect key="frame" x="151" y="522" width="298" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="8Bn-t6-Vz0"/>
                                     <constraint firstAttribute="width" constant="298" id="ZjU-RB-rgT"/>
@@ -1036,7 +1046,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-tM-zeu">
-                                <rect key="frame" x="11" y="299" width="298" height="41"/>
+                                <rect key="frame" x="151" y="469" width="298" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="V83-tX-RzG"/>
                                     <constraint firstAttribute="height" constant="41" id="fN8-T2-GSN"/>
@@ -1049,7 +1059,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiL-2C-Cmo">
-                                <rect key="frame" x="11" y="458" width="298" height="41"/>
+                                <rect key="frame" x="151" y="628" width="298" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="0Tt-Mk-tI2"/>
                                     <constraint firstAttribute="width" constant="298" id="4d6-uB-mQ5"/>
@@ -1062,7 +1072,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9z-Yj-rYG">
-                                <rect key="frame" x="11" y="405" width="298" height="41"/>
+                                <rect key="frame" x="151" y="575" width="298" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="LHM-iV-Vdx"/>
                                     <constraint firstAttribute="height" constant="41" id="whz-DM-TmK"/>
@@ -1095,7 +1105,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shout Out" id="Ake-4Q-QKe"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btRecord" destination="4DK-fy-7Iy" id="ifh-Bz-70J"/>
                         <outlet property="btnPreview" destination="x9z-Yj-rYG" id="gm0-aH-A2k"/>
@@ -1107,7 +1116,7 @@
             </objects>
             <point key="canvasLocation" x="2335" y="683"/>
         </scene>
-        <!--Radio-->
+        <!--Radio View Controller-->
         <scene sceneID="mID-Lp-V6o">
             <objects>
                 <viewController id="U73-AZ-dhK" customClass="RadioViewController" sceneMemberID="viewController">
@@ -1271,7 +1280,7 @@
                             <constraint firstItem="w3W-Wa-5un" firstAttribute="leading" secondItem="vqm-7Z-uJx" secondAttribute="leadingMargin" constant="-20" id="zT3-WJ-Iul"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Radio" image="icon_radio.png" id="Ekf-MX-Mq0"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_radio.png" id="Ekf-MX-Mq0"/>
                     <navigationItem key="navigationItem" id="YSE-np-Cnl"/>
                     <connections>
                         <outlet property="_adWebView" destination="CKf-3y-rsR" id="GfX-7H-R5q"/>
@@ -1294,7 +1303,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="68W-8l-dun">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.074509803921568626" green="0.0039215686274509803" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -1328,9 +1336,9 @@
         <image name="ic_calendar.png" width="64" height="64"/>
         <image name="ic_trophy.png" width="64" height="64"/>
         <image name="icon_alarm.png" width="30" height="30"/>
-        <image name="icon_radio.png" width="30" height="30"/>
-        <image name="icon_shoutout.png" width="30" height="30"/>
-        <image name="icon_social.png" width="30" height="30"/>
+        <image name="icon_radio.png" width="30" height="29"/>
+        <image name="icon_shoutout.png" width="20" height="30"/>
+        <image name="icon_social.png" width="30" height="27"/>
         <image name="icon_web.png" width="30" height="30"/>
         <image name="img_logo.png" width="480" height="334"/>
         <image name="img_logo_full.png" width="640" height="640"/>
