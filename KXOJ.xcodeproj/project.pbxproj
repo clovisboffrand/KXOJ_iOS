@@ -91,7 +91,6 @@
 		4A05E4E41B5AC97C000E7305 /* btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A05E4E21B5AC97C000E7305 /* btn_back@2x.png */; };
 		4A4965261B5B7A4E00E4CF2D /* icn_chanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4965241B5B7A4E00E4CF2D /* icn_chanel.png */; };
 		4A4965271B5B7A4E00E4CF2D /* icn_chanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4965251B5B7A4E00E4CF2D /* icn_chanel@2x.png */; };
-		4B27CB6F7D5727B316ECF856 /* libPods-WJRS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C723E71F41CEDB6D440FDD6D /* libPods-WJRS.a */; };
 		B5444874137C0FE100D39757 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5444873137C0FE100D39757 /* AudioToolbox.framework */; };
 		B5444876137C0FEA00D39757 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5444875137C0FEA00D39757 /* AVFoundation.framework */; };
 		B54C4D6A1395977900995852 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C4D691395977900995852 /* MediaPlayer.framework */; };
@@ -102,6 +101,7 @@
 		CBE2F72A171281F700FC41C1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE2F729171281F700FC41C1 /* MessageUI.framework */; };
 		CBE2F72C1712820C00FC41C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE2F72B1712820C00FC41C1 /* SystemConfiguration.framework */; };
 		E125FB551BB4664F0043F073 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E125FB541BB4664F0043F073 /* Images.xcassets */; };
+		EFA4FE6B4456EEBD7E34BCD8 /* libPods-KXOJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D488CD405039268FC9B109D /* libPods-KXOJ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +117,7 @@
 		091083121D00256F0088C319 /* btn_set_alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_set_alarm.png; sourceTree = "<group>"; };
 		091083141D00275A0088C319 /* shoutoutimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoutoutimage.png; sourceTree = "<group>"; };
 		0931A1F91D02716E006A20D1 /* img_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo.png; sourceTree = "<group>"; };
-		093C3AEC1BB8797500E72B1B /* WJRS_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJRS_Prefix.pch; sourceTree = "<group>"; };
+		093C3AEC1BB8797500E72B1B /* KXOJ_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KXOJ_Prefix.pch; sourceTree = "<group>"; };
 		09717FA81D0009E600B992CF /* bg_radio_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_radio_page.png; sourceTree = "<group>"; };
 		098182F21D2F48FB003BBE5E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0986B3751D20ADF10057C34C /* img_logo_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo_full.png; sourceTree = "<group>"; };
@@ -152,6 +152,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* KXOJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KXOJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E2D0E6423D2344FEFE20EC6 /* Pods-KXOJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KXOJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-KXOJ/Pods-KXOJ.release.xcconfig"; sourceTree = "<group>"; };
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4A05E3891B5A2865000E7305 /* CommonHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelpers.h; sourceTree = "<group>"; };
 		4A05E38A1B5A2865000E7305 /* CommonHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelpers.m; sourceTree = "<group>"; };
@@ -197,7 +198,7 @@
 		4A05E4111B5A2865000E7305 /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
 		4A05E4121B5A2865000E7305 /* RadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
 		4A05E4A91B5A290A000E7305 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KXOJ/main.m; sourceTree = "<group>"; };
-		4A05E4AB1B5A2923000E7305 /* WJRS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "WJRS-Info.plist"; path = "KXOJ/WJRS-Info.plist"; sourceTree = "<group>"; };
+		4A05E4AB1B5A2923000E7305 /* KXOJ-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KXOJ-Info.plist"; path = "KXOJ/KXOJ-Info.plist"; sourceTree = "<group>"; };
 		4A05E4B41B5A30BF000E7305 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		4A05E4C11B5A3108000E7305 /* XMLConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLConverter.h; sourceTree = "<group>"; };
 		4A05E4C21B5A3108000E7305 /* XMLConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLConverter.m; sourceTree = "<group>"; };
@@ -209,7 +210,7 @@
 		4A05E4E21B5AC97C000E7305 /* btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@2x.png"; sourceTree = "<group>"; };
 		4A4965241B5B7A4E00E4CF2D /* icn_chanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_chanel.png; sourceTree = "<group>"; };
 		4A4965251B5B7A4E00E4CF2D /* icn_chanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_chanel@2x.png"; sourceTree = "<group>"; };
-		9A5702131CB53829944F3914 /* Pods-WJRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJRS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJRS/Pods-WJRS.release.xcconfig"; sourceTree = "<group>"; };
+		9D488CD405039268FC9B109D /* libPods-KXOJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KXOJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5444873137C0FE100D39757 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B5444875137C0FEA00D39757 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B54C4D691395977900995852 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -221,7 +222,7 @@
 		CBE2F729171281F700FC41C1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CBE2F72B1712820C00FC41C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E125FB541BB4664F0043F073 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KXOJ/Images.xcassets; sourceTree = "<group>"; };
-		E5AD693E82524B8230251164 /* Pods-WJRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJRS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJRS/Pods-WJRS.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C06D1C9EF964FECF49329B /* Pods-KXOJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KXOJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KXOJ/Pods-KXOJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +241,7 @@
 				B5444874137C0FE100D39757 /* AudioToolbox.framework in Frameworks */,
 				B5444876137C0FEA00D39757 /* AVFoundation.framework in Frameworks */,
 				B54C4D6A1395977900995852 /* MediaPlayer.framework in Frameworks */,
-				4B27CB6F7D5727B316ECF856 /* libPods-WJRS.a in Frameworks */,
+				EFA4FE6B4456EEBD7E34BCD8 /* libPods-KXOJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +416,7 @@
 		29B97314FDCFA39411CA2CEA /* radio99 */ = {
 			isa = PBXGroup;
 			children = (
-				4A05E2C41B5A271B000E7305 /* WJRS */,
+				4A05E2C41B5A271B000E7305 /* KXOJ */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -428,7 +429,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				093C3AEC1BB8797500E72B1B /* WJRS_Prefix.pch */,
+				093C3AEC1BB8797500E72B1B /* KXOJ_Prefix.pch */,
 				4A05E4A91B5A290A000E7305 /* main.m */,
 			);
 			name = "Other Sources";
@@ -440,7 +441,7 @@
 				E125FB541BB4664F0043F073 /* Images.xcassets */,
 				4A05E3A21B5A2865000E7305 /* Files */,
 				4A05E3A51B5A2865000E7305 /* Images */,
-				4A05E4AB1B5A2923000E7305 /* WJRS-Info.plist */,
+				4A05E4AB1B5A2923000E7305 /* KXOJ-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -460,11 +461,12 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 				C723E71F41CEDB6D440FDD6D /* libPods-WJRS.a */,
+				9D488CD405039268FC9B109D /* libPods-KXOJ.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A05E2C41B5A271B000E7305 /* WJRS */ = {
+		4A05E2C41B5A271B000E7305 /* KXOJ */ = {
 			isa = PBXGroup;
 			children = (
 				4A05E3881B5A2865000E7305 /* Commons */,
@@ -473,7 +475,6 @@
 				4A05E3951B5A2865000E7305 /* AppDelegate.m */,
 				098182F21D2F48FB003BBE5E /* Main.storyboard */,
 			);
-			name = WJRS;
 			path = KXOJ;
 			sourceTree = "<group>";
 		};
@@ -553,8 +554,8 @@
 		95196DA67F79B3B0449090D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD693E82524B8230251164 /* Pods-WJRS.debug.xcconfig */,
-				9A5702131CB53829944F3914 /* Pods-WJRS.release.xcconfig */,
+				F3C06D1C9EF964FECF49329B /* Pods-KXOJ.debug.xcconfig */,
+				1E2D0E6423D2344FEFE20EC6 /* Pods-KXOJ.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -562,9 +563,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* WJRS */ = {
+		1D6058900D05DD3D006BFB54 /* KXOJ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WJRS" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "KXOJ" */;
 			buildPhases = (
 				EC9B6627A23A56D1A81B38FA /* 📦 Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -577,7 +578,7 @@
 			);
 			dependencies = (
 			);
-			name = WJRS;
+			name = KXOJ;
 			productName = radio99;
 			productReference = 1D6058910D05DD3D006BFB54 /* KXOJ.app */;
 			productType = "com.apple.product-type.application";
@@ -591,7 +592,7 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = RadioServersLLC;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WJRS" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KXOJ" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -605,7 +606,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* WJRS */,
+				1D6058900D05DD3D006BFB54 /* KXOJ */,
 			);
 		};
 /* End PBXProject section */
@@ -699,7 +700,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJRS/Pods-WJRS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KXOJ/Pods-KXOJ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C18B878D4C1363D547640D07 /* 📦 Embed Pods Frameworks */ = {
@@ -714,7 +715,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJRS/Pods-WJRS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KXOJ/Pods-KXOJ-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC9B6627A23A56D1A81B38FA /* 📦 Check Pods Manifest.lock */ = {
@@ -764,7 +765,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5AD693E82524B8230251164 /* Pods-WJRS.debug.xcconfig */;
+			baseConfigurationReference = F3C06D1C9EF964FECF49329B /* Pods-KXOJ.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -777,8 +778,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WJRS_Prefix.pch;
-				INFOPLIST_FILE = "KXOJ/WJRS-Info.plist";
+				GCC_PREFIX_HEADER = KXOJ_Prefix.pch;
+				INFOPLIST_FILE = "KXOJ/KXOJ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = comRadioservers.kxoj;
@@ -794,7 +795,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5702131CB53829944F3914 /* Pods-WJRS.release.xcconfig */;
+			baseConfigurationReference = 1E2D0E6423D2344FEFE20EC6 /* Pods-KXOJ.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -807,8 +808,8 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WJRS_Prefix.pch;
-				INFOPLIST_FILE = "KXOJ/WJRS-Info.plist";
+				GCC_PREFIX_HEADER = KXOJ_Prefix.pch;
+				INFOPLIST_FILE = "KXOJ/KXOJ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = comRadioservers.kxoj;
@@ -864,7 +865,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WJRS" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "KXOJ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -873,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WJRS" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KXOJ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
