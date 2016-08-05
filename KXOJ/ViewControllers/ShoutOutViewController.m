@@ -8,11 +8,29 @@
 
 #import "ShoutOutViewController.h"
 #import "Header.h"
+#import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
 
 #define SAMPLE_LINK @"http://www.bristolbeat.com/app/sample.mp3"
 #define UPLOAD_LINK @"http://radioserversapps.com/bristolbeat/app/upload.php"
 
+@interface ShoutOutViewController() <AVAudioPlayerDelegate, AVAudioRecorderDelegate>
+
+@property(nonatomic, strong) NSMutableArray *arrSlide;
+
+@property(nonatomic, strong) IBOutlet UIButton *btnRecord;
+@property(nonatomic, strong) IBOutlet UIButton *btnPreview;
+@property(nonatomic, strong) IBOutlet UIButton *btnSample;
+@property(nonatomic, strong) IBOutlet UIButton *btnSend;
+
+@end
+
 @implementation ShoutOutViewController
+{
+    AVAudioRecorder *audioRecorder;
+    BOOL isRecording;
+    AVAudioPlayer *theAudio;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,26 +52,24 @@
     [[NSNotificationCenter defaultCenter]postNotificationName:@"pauseRadio" object:nil];
     [self initRecord];
     
-    self.navigationController.navigationBar.userInteractionEnabled=NO;
-    NSLog(@"startRecording");
-    [self.btRecord setImage:[UIImage imageNamed:@"stopbutton.png"] forState:UIControlStateNormal];
-    
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];
     
     // Start recording
     [audioRecorder record];
     isRecording = YES;
+    self.btnRecord.selected = YES;
+    [self.btnRecord setTitle:@"Stop Recording" forState:UIControlStateNormal];
+    [self.btnRecord setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.btnPreview.enabled = NO;
     self.btnSample.enabled = NO;
     self.btnSend.enabled = NO;
-    NSLog(@"recording");
 }
 
 - (void)stopRecording {
-    [self.btRecord setImage:[UIImage imageNamed:@"recordbutton.png"] forState:UIControlStateNormal];
-    
-    NSLog(@"stopRecording");
+    self.btnRecord.selected = NO;
+    [self.btnRecord setTitle:@"Record Your Voice" forState:UIControlStateNormal];
+    [self.btnRecord setTitleColor:UIColorWithHexCode(TINT_DEF_COLR, 1) forState:UIControlStateNormal];
     
     isRecording = NO;
     [audioRecorder stop];

@@ -1023,86 +1023,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-app-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZjH-73-imh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoutoutimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-pV-1Si">
                                 <rect key="frame" x="0.0" y="64" width="600" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Bta-pV-1Si" secondAttribute="height" multiplier="320:200" id="OlR-4v-dI8"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DK-fy-7Iy">
-                                <rect key="frame" x="151" y="522" width="298" height="41"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clu-Ju-mSq">
+                                <rect key="frame" x="60" y="439" width="480" height="112"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-tM-zeu">
+                                        <rect key="frame" x="0.0" y="17" width="480" height="17"/>
+                                        <state key="normal" title="Listen To An Example" backgroundImage="bg_button_normal.png">
+                                            <color key="titleColor" red="0.88627450980392153" green="0.0078431372549019607" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="bg_button_selected.png"/>
+                                        <connections>
+                                            <action selector="doSample:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="S8z-pu-5d9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-o9-DW1">
+                                        <rect key="frame" x="0.0" y="46" width="480" height="17"/>
+                                        <state key="normal" title="Record Your Voice" backgroundImage="bg_button_normal.png">
+                                            <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="bg_button_selected.png"/>
+                                        <connections>
+                                            <action selector="doRecord:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="sEp-Yf-O6s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znc-nO-q1a">
+                                        <rect key="frame" x="0.0" y="75" width="480" height="17"/>
+                                        <state key="normal" title="Preview Your Recording" backgroundImage="bg_button_normal.png">
+                                            <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="bg_button_selected.png"/>
+                                        <connections>
+                                            <action selector="doPreview:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="xlj-5r-S0B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-K4-8QP">
+                                        <rect key="frame" x="0.0" y="104" width="480" height="17"/>
+                                        <state key="normal" title="Send It In !" backgroundImage="bg_button_normal.png">
+                                            <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="bg_button_selected.png"/>
+                                        <connections>
+                                            <action selector="doSend:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="gZC-0A-ndT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="8Bn-t6-Vz0"/>
-                                    <constraint firstAttribute="width" constant="298" id="ZjU-RB-rgT"/>
+                                    <constraint firstItem="4Ez-o9-DW1" firstAttribute="width" secondItem="clu-Ju-mSq" secondAttribute="width" id="146-LI-dze"/>
+                                    <constraint firstItem="PjL-tM-zeu" firstAttribute="centerY" secondItem="clu-Ju-mSq" secondAttribute="centerY" multiplier="0.45" id="1sA-di-ITZ"/>
+                                    <constraint firstItem="PjL-tM-zeu" firstAttribute="height" secondItem="clu-Ju-mSq" secondAttribute="height" multiplier="0.15" id="7hb-2g-833"/>
+                                    <constraint firstItem="4Ez-o9-DW1" firstAttribute="top" secondItem="PjL-tM-zeu" secondAttribute="bottom" constant="12" id="8mH-iO-drE"/>
+                                    <constraint firstItem="X0m-K4-8QP" firstAttribute="width" secondItem="clu-Ju-mSq" secondAttribute="width" id="9Ib-G6-Ymv"/>
+                                    <constraint firstItem="X0m-K4-8QP" firstAttribute="centerX" secondItem="clu-Ju-mSq" secondAttribute="centerX" id="G23-il-IZK"/>
+                                    <constraint firstItem="znc-nO-q1a" firstAttribute="height" secondItem="clu-Ju-mSq" secondAttribute="height" multiplier="0.15" id="Lb4-mn-YL5"/>
+                                    <constraint firstItem="X0m-K4-8QP" firstAttribute="height" secondItem="clu-Ju-mSq" secondAttribute="height" multiplier="0.15" id="OsT-Sl-QX3"/>
+                                    <constraint firstItem="4Ez-o9-DW1" firstAttribute="height" secondItem="clu-Ju-mSq" secondAttribute="height" multiplier="0.15" id="Qcl-BW-hNh"/>
+                                    <constraint firstItem="X0m-K4-8QP" firstAttribute="top" secondItem="znc-nO-q1a" secondAttribute="bottom" constant="12" id="UXh-dV-m2b"/>
+                                    <constraint firstItem="znc-nO-q1a" firstAttribute="top" secondItem="4Ez-o9-DW1" secondAttribute="bottom" constant="12" id="ewc-39-VIU"/>
+                                    <constraint firstItem="znc-nO-q1a" firstAttribute="width" secondItem="clu-Ju-mSq" secondAttribute="width" id="gEG-RR-s18"/>
+                                    <constraint firstItem="PjL-tM-zeu" firstAttribute="centerX" secondItem="clu-Ju-mSq" secondAttribute="centerX" id="ufq-Ef-G7V"/>
+                                    <constraint firstItem="znc-nO-q1a" firstAttribute="centerX" secondItem="clu-Ju-mSq" secondAttribute="centerX" id="wMM-Bv-xvj"/>
+                                    <constraint firstItem="4Ez-o9-DW1" firstAttribute="centerX" secondItem="clu-Ju-mSq" secondAttribute="centerX" id="y9Z-Iu-r4Q"/>
+                                    <constraint firstItem="PjL-tM-zeu" firstAttribute="width" secondItem="clu-Ju-mSq" secondAttribute="width" id="yh9-PF-mbF"/>
                                 </constraints>
-                                <state key="normal" image="recordbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doRecord:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="0At-ts-OjJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-tM-zeu">
-                                <rect key="frame" x="151" y="469" width="298" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="298" id="V83-tX-RzG"/>
-                                    <constraint firstAttribute="height" constant="41" id="fN8-T2-GSN"/>
-                                </constraints>
-                                <state key="normal" image="samplebutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doSample:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="S8z-pu-5d9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiL-2C-Cmo">
-                                <rect key="frame" x="151" y="628" width="298" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="0Tt-Mk-tI2"/>
-                                    <constraint firstAttribute="width" constant="298" id="4d6-uB-mQ5"/>
-                                </constraints>
-                                <state key="normal" image="sendbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doSend:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="ya5-be-RPQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9z-Yj-rYG">
-                                <rect key="frame" x="151" y="575" width="298" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="298" id="LHM-iV-Vdx"/>
-                                    <constraint firstAttribute="height" constant="41" id="whz-DM-TmK"/>
-                                </constraints>
-                                <state key="normal" image="listenbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doPreview:" destination="Jpc-rb-cbR" eventType="touchUpInside" id="5rb-Xd-hiM"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HiL-2C-Cmo" firstAttribute="centerX" secondItem="fTE-iM-DbL" secondAttribute="centerX" id="7zJ-UN-6Yd"/>
+                            <constraint firstAttribute="trailing" secondItem="ZjH-73-imh" secondAttribute="trailing" id="4Ny-Lw-FBV"/>
+                            <constraint firstItem="ZjH-73-imh" firstAttribute="leading" secondItem="fTE-iM-DbL" secondAttribute="leading" id="5Al-s9-6r2"/>
+                            <constraint firstItem="MJ7-RR-tAs" firstAttribute="top" secondItem="clu-Ju-mSq" secondAttribute="bottom" id="BgO-WU-58Y"/>
                             <constraint firstItem="Bta-pV-1Si" firstAttribute="leading" secondItem="fTE-iM-DbL" secondAttribute="leadingMargin" constant="-20" id="F0T-wt-UVZ"/>
-                            <constraint firstItem="HiL-2C-Cmo" firstAttribute="top" secondItem="x9z-Yj-rYG" secondAttribute="bottom" constant="12" id="FhA-bq-PGF"/>
-                            <constraint firstItem="4DK-fy-7Iy" firstAttribute="top" secondItem="PjL-tM-zeu" secondAttribute="bottom" constant="12" id="HNg-lm-1uI"/>
-                            <constraint firstItem="PjL-tM-zeu" firstAttribute="centerX" secondItem="fTE-iM-DbL" secondAttribute="centerX" id="RGh-mz-gFz"/>
-                            <constraint firstItem="x9z-Yj-rYG" firstAttribute="top" secondItem="4DK-fy-7Iy" secondAttribute="bottom" constant="12" id="WRi-hp-CXq"/>
+                            <constraint firstItem="clu-Ju-mSq" firstAttribute="top" secondItem="Bta-pV-1Si" secondAttribute="bottom" id="GC1-Td-Jyc"/>
+                            <constraint firstItem="clu-Ju-mSq" firstAttribute="centerX" secondItem="fTE-iM-DbL" secondAttribute="centerX" id="gLq-Dh-IuT"/>
+                            <constraint firstItem="MJ7-RR-tAs" firstAttribute="top" secondItem="ZjH-73-imh" secondAttribute="bottom" id="hhN-Ts-OKZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bta-pV-1Si" secondAttribute="trailing" constant="-20" id="jhG-Rz-BpZ"/>
-                            <constraint firstItem="x9z-Yj-rYG" firstAttribute="centerX" secondItem="fTE-iM-DbL" secondAttribute="centerX" id="nXT-Rf-4Nw"/>
+                            <constraint firstItem="ZjH-73-imh" firstAttribute="top" secondItem="Q16-g3-s4R" secondAttribute="bottom" id="ncY-Mr-aop"/>
                             <constraint firstItem="Bta-pV-1Si" firstAttribute="top" secondItem="Q16-g3-s4R" secondAttribute="bottom" id="tRN-Ad-bHh"/>
-                            <constraint firstItem="4DK-fy-7Iy" firstAttribute="centerX" secondItem="fTE-iM-DbL" secondAttribute="centerX" id="uRT-bd-9ee"/>
-                            <constraint firstItem="PjL-tM-zeu" firstAttribute="top" secondItem="Bta-pV-1Si" secondAttribute="bottom" constant="30" id="zkj-WB-rMG"/>
+                            <constraint firstItem="clu-Ju-mSq" firstAttribute="width" secondItem="fTE-iM-DbL" secondAttribute="width" multiplier="0.8" id="ykb-ti-671"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shout Out" id="Ake-4Q-QKe"/>
                     <connections>
-                        <outlet property="btRecord" destination="4DK-fy-7Iy" id="ifh-Bz-70J"/>
-                        <outlet property="btnPreview" destination="x9z-Yj-rYG" id="gm0-aH-A2k"/>
+                        <outlet property="btnPreview" destination="znc-nO-q1a" id="Jnc-KB-eoc"/>
+                        <outlet property="btnRecord" destination="4Ez-o9-DW1" id="3y7-ot-ky2"/>
                         <outlet property="btnSample" destination="PjL-tM-zeu" id="OaE-SN-mMy"/>
-                        <outlet property="btnSend" destination="HiL-2C-Cmo" id="i7Y-mW-nbh"/>
+                        <outlet property="btnSend" destination="X0m-K4-8QP" id="dcr-pl-sXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqs-rp-uGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1319,6 +1333,8 @@
         <image name="Stop.png" width="26" height="26"/>
         <image name="arrow_left.png" width="15" height="20"/>
         <image name="arrow_right.png" width="15" height="20"/>
+        <image name="bg_button_normal.png" width="493" height="86"/>
+        <image name="bg_button_selected.png" width="493" height="86"/>
         <image name="bg_radio_page.png" width="1800" height="1800"/>
         <image name="btn_set_alarm.png" width="552" height="88"/>
         <image name="call.png" width="64" height="64"/>
@@ -1336,14 +1352,10 @@
         <image name="img_logo.png" width="480" height="334"/>
         <image name="img_logo_full.png" width="640" height="640"/>
         <image name="instagramicon.png" width="64" height="64"/>
-        <image name="listenbutton.png" width="298" height="41"/>
         <image name="new-app-background.jpg" width="640" height="960"/>
         <image name="play.png" width="26" height="26"/>
         <image name="playlisticon.png" width="37" height="39"/>
-        <image name="recordbutton.png" width="298" height="41"/>
         <image name="reload_new.png" width="25" height="25"/>
-        <image name="samplebutton.png" width="298" height="41"/>
-        <image name="sendbutton.png" width="298" height="41"/>
         <image name="shoutoutimage.png" width="960" height="600"/>
         <image name="twitter.png" width="64" height="64"/>
         <image name="website.png" width="64" height="64"/>
