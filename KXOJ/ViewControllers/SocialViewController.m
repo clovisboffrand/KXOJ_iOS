@@ -19,15 +19,23 @@
 
 @end
 
-#define FACEBOOK_URL    @"http://www.facebook.com/bristolbeat"
-#define TWITTER_URL     @"http://www.twitter.com/bristolsrockmix"
-#define WEBSITE_URL     @"http://bristolbeat.com/"
-#define INSTAGRAM_URL   @"https://instagram.com/bristolbeatradio"
-#define PHONE_NUMBER    @"860-261-7456"
-#define EMAIL_ADDRESS   @"studio@bristolbeat.com"
-#define CALENDAR_URL    @"http://bristolbeat.com/event-directory/"
-#define ADVERTISERS_URL @"http://www.bristolbeat.com/directory"
-#define CONTESTS_URL    @"http://bristolbeat.com/category/contests/"
+#define FACEBOOK_URL_1  @"http://www.facebook.com/kxojtulsa"
+#define FACEBOOK_URL_2  @"http://facebook.com/kxoj2"
+
+#define TWITTER_URL_1   @"http://twitter.com/kxoj"
+#define TWITTER_URL_2   @"http://twitter.com/kxojhd2"
+
+#define INSTAGRAM_URL   @"http://instagram.com/kxoj2"
+#define VINE_URL        @"https://vine.co/u/1230442394806587392"
+#define YOUTUBE_URL     @"http://www.youtube.com/kxoj"
+
+#define WEBSITE_URL_1   @"http://www.kxoj.com"
+#define WEBSITE_URL_2   @"http://kxoj2.com"
+
+#define PHONE_NUMBER    @"918-460-5965"
+
+#define EMAIL_ADDRESS_1 @"onair@kxoj.com"
+#define EMAIL_ADDRESS_2 @"studio@bristolbeat.com"
 
 @implementation SocialViewController
 
@@ -60,33 +68,29 @@
 - (IBAction)didTapSocialButton:(UIButton *)button {
     SocialPageViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SocialPageViewController"];
     switch (button.tag) {
-        case 1:
+        case 100:
             viewController.title = @"Facebook";
-            viewController.pageURL = FACEBOOK_URL;
+            viewController.pageURL = FACEBOOK_URL_1;
             break;
-        case 2:
+        case 101:
             viewController.title = @"Twitter";
-            viewController.pageURL = TWITTER_URL;
+            viewController.pageURL = TWITTER_URL_1;
             break;
-        case 4:
-            viewController.title = @"Website";
-            viewController.pageURL = WEBSITE_URL;
-            break;
-        case 5:
-            viewController.title = @"Calendar";
-            viewController.pageURL = CALENDAR_URL;
-            break;
-        case 6:
-            viewController.title = @"Advertisers";
-            viewController.pageURL = ADVERTISERS_URL;
-            break;
-        case 7:
-            viewController.title = @"Contests";
-            viewController.pageURL = CONTESTS_URL;
-            break;
-        case 8:
+        case 102:
             viewController.title = @"Instagram";
             viewController.pageURL = INSTAGRAM_URL;
+            break;
+        case 103:
+            viewController.title = @"Vine";
+            viewController.pageURL = VINE_URL;
+            break;
+        case 104:
+            viewController.title = @"Youtube";
+            viewController.pageURL = YOUTUBE_URL;
+            break;
+        case 105:
+            viewController.title = @"Website";
+            viewController.pageURL = WEBSITE_URL_1;
             break;
     }
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:nil action:nil];
@@ -95,16 +99,16 @@
 
 - (IBAction)didTapOtherButton:(UIButton *)button {
     switch (button.tag) {
-        case 5: {
+        case 106: {
             NSString *url = [NSString stringWithFormat:@"telprompt:%@", PHONE_NUMBER];
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
             break;
         }
-        case 6:
-            [self sendSMS];
-            break;
-        case 7:
+        case 107:
             [self sendEmail];
+            break;
+        case 108:
+            [self sendSMS];
             break;
     }
 }
@@ -140,7 +144,7 @@
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     [[picker navigationBar] setTintColor:[UIColor blackColor]];
     picker.mailComposeDelegate = self;
-    [picker setToRecipients:[NSArray arrayWithObjects:EMAIL_ADDRESS, nil]];
+    [picker setToRecipients:[NSArray arrayWithObjects:EMAIL_ADDRESS_1, nil]];
     [picker setCcRecipients:nil];
     [picker setBccRecipients:nil];
     [picker setSubject:@"Mobile App Email"];
@@ -148,7 +152,7 @@
 }
 
 - (void)launchMailAppOnDevice {
-    NSString *recipients = [NSString stringWithFormat:@"mailto:%@?cc=&subject=iRadio Email", EMAIL_ADDRESS];
+    NSString *recipients = [NSString stringWithFormat:@"mailto:%@?cc=&subject=iRadio Email", EMAIL_ADDRESS_1];
     NSString *body = [NSString stringWithFormat:@"&body="];
     NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
     email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

@@ -555,211 +555,110 @@
                                     <outlet property="delegate" destination="1SA-Y0-XKz" id="FSp-vd-HRr"/>
                                 </connections>
                             </webView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Yc-XJp">
-                                <rect key="frame" x="143" y="178" width="315" height="91"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-8x-aL2">
+                                <rect key="frame" x="30" y="178" width="540" height="353"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99f-el-uy9" userLabel="FB">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="facebook.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" tag="100" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-s7-RhY">
+                                        <rect key="frame" x="0.0" y="1" width="540" height="35"/>
+                                        <state key="normal" image="btn_facebook.png"/>
                                         <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="Yr1-A7-G10"/>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="fcI-71-GOK"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YX-2Y-KOZ">
-                                        <rect key="frame" x="3" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HE-fH-OHU" userLabel="TW">
-                                        <rect key="frame" x="80" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="twitter.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" tag="101" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ns-dJ-GTr">
+                                        <rect key="frame" x="0.0" y="40" width="540" height="36"/>
+                                        <state key="normal" image="btn_twitter.png"/>
                                         <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="ClM-5G-X6n"/>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="hh8-Ah-EuX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-Dl-Vwk">
-                                        <rect key="frame" x="83" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwF-au-FLQ" userLabel="Website">
-                                        <rect key="frame" x="160" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="website.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" tag="102" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e87-pQ-9Fw">
+                                        <rect key="frame" x="0.0" y="80" width="540" height="35"/>
+                                        <state key="normal" image="btn_instagram.png"/>
                                         <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="YnL-0e-GiW"/>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="LSg-gt-8rT"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PD-SP-W0t">
-                                        <rect key="frame" x="163" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ib-nJ-SVZ" userLabel="Phone">
-                                        <rect key="frame" x="240" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="call.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" tag="103" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y49-Bn-4N4">
+                                        <rect key="frame" x="0.0" y="119" width="540" height="36"/>
+                                        <state key="normal" image="btn_vine.png"/>
                                         <connections>
-                                            <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="5i9-Ba-8IJ"/>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="uGD-4L-Aau"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DF-iR-4Ph">
-                                        <rect key="frame" x="243" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" tag="104" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITP-Ii-Kxu">
+                                        <rect key="frame" x="0.0" y="158" width="540" height="36"/>
+                                        <state key="normal" image="btn_youtube.png"/>
+                                        <connections>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="Op4-Jh-4NT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="105" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEx-US-cSh">
+                                        <rect key="frame" x="0.0" y="198" width="540" height="36"/>
+                                        <state key="normal" image="btn_website.png"/>
+                                        <connections>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="VSk-lX-Q6x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="106" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBe-UP-XLj">
+                                        <rect key="frame" x="0.0" y="237" width="540" height="35"/>
+                                        <state key="normal" image="btn_phone.png"/>
+                                        <connections>
+                                            <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="S0P-Oi-Y52"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="107" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-Z9-YGT">
+                                        <rect key="frame" x="0.0" y="276" width="540" height="36"/>
+                                        <state key="normal" image="btn_email.png"/>
+                                        <connections>
+                                            <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="ahZ-An-TgB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="108" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzi-ct-usR">
+                                        <rect key="frame" x="0.0" y="316" width="540" height="35"/>
+                                        <state key="normal" image="btn_message.png"/>
+                                        <connections>
+                                            <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="dR0-PA-A9X"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="315" id="57p-i0-QLX"/>
-                                    <constraint firstAttribute="height" constant="91" id="AUi-SZ-8Mt"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99n-7A-0Xy">
-                                <rect key="frame" x="143" y="289" width="315" height="91"/>
-                                <subviews>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urL-I9-i3e" userLabel="email">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="email.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="kOn-29-XUT"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEC-Fg-cRr">
-                                        <rect key="frame" x="0.0" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mm-AD-NB0" userLabel="instagram">
-                                        <rect key="frame" x="80" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="instagramicon.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="aGY-ST-sre"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5B-2P-whx">
-                                        <rect key="frame" x="83" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vo4-dP-xhM" userLabel="calendar">
-                                        <rect key="frame" x="160" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="ic_calendar.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="481-Lm-zrP"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw6-wh-PWl">
-                                        <rect key="frame" x="163" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7E-Iu-iIT" userLabel="advertisers">
-                                        <rect key="frame" x="240" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="ic_building.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="2l3-Xl-HyL"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="advertisers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgM-oS-Tlm">
-                                        <rect key="frame" x="243" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="315" id="ffX-iC-xvb"/>
-                                    <constraint firstAttribute="height" constant="91" id="wQU-Kb-apV"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-Y2-7x8">
-                                <rect key="frame" x="143" y="400" width="315" height="91"/>
-                                <subviews>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-UV-PG3" userLabel="contests">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" image="ic_trophy.png">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="icb-uX-bVI"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="contests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9y-bX-Nsf">
-                                        <rect key="frame" x="3" y="70" width="69" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="QAm-GW-A8a"/>
-                                    <constraint firstAttribute="width" constant="315" id="S44-hb-ggN"/>
+                                    <constraint firstItem="xqR-s7-RhY" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="0ng-5H-zaY"/>
+                                    <constraint firstItem="mzi-ct-usR" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="245-2t-mlI"/>
+                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="7/9" id="43q-28-VFU"/>
+                                    <constraint firstItem="ITP-Ii-Kxu" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="9/9" id="CC0-fJ-SEw"/>
+                                    <constraint firstItem="tZP-Z9-YGT" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="IG8-MJ-6QQ"/>
+                                    <constraint firstItem="e87-pQ-9Fw" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="5/9" id="LHl-sD-VyJ"/>
+                                    <constraint firstItem="2Ns-dJ-GTr" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="MEt-48-OM3"/>
+                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="Po1-mz-DUn"/>
+                                    <constraint firstItem="vBe-UP-XLj" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="13/9" id="R4C-Au-brE"/>
+                                    <constraint firstItem="tZP-Z9-YGT" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="15/9" id="S6L-zK-9Eb"/>
+                                    <constraint firstItem="2Ns-dJ-GTr" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="SLi-na-eyg"/>
+                                    <constraint firstItem="xqR-s7-RhY" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="WxM-9f-oYA"/>
+                                    <constraint firstItem="e87-pQ-9Fw" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="XB3-3P-ESr"/>
+                                    <constraint firstItem="XEx-US-cSh" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="ZFv-1A-e4X"/>
+                                    <constraint firstItem="XEx-US-cSh" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="Zd4-bh-xby"/>
+                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="ZkC-pE-9tF"/>
+                                    <constraint firstItem="mzi-ct-usR" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="17/9" id="be2-SC-5bl"/>
+                                    <constraint firstItem="tZP-Z9-YGT" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="bmN-dQ-VU3"/>
+                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="dEV-BY-nFn"/>
+                                    <constraint firstItem="XEx-US-cSh" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="dzD-Xa-Sew"/>
+                                    <constraint firstItem="vBe-UP-XLj" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="f1d-9t-zdX"/>
+                                    <constraint firstItem="e87-pQ-9Fw" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="g0B-xs-abl"/>
+                                    <constraint firstItem="ITP-Ii-Kxu" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="hiv-Ov-DhI"/>
+                                    <constraint firstItem="ITP-Ii-Kxu" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="hy9-MF-XQe"/>
+                                    <constraint firstItem="vBe-UP-XLj" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="kbI-Mx-ro3"/>
+                                    <constraint firstItem="2Ns-dJ-GTr" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="3/9" id="lrp-rq-yhS"/>
+                                    <constraint firstItem="mzi-ct-usR" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="pv2-g0-saf"/>
+                                    <constraint firstItem="xqR-s7-RhY" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="qTt-PM-RT8"/>
+                                    <constraint firstItem="tZP-Z9-YGT" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="qij-KI-Gpi"/>
+                                    <constraint firstItem="xqR-s7-RhY" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="1/9" id="qoj-oC-wxN"/>
+                                    <constraint firstItem="mzi-ct-usR" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="rTV-ie-80N"/>
+                                    <constraint firstItem="XEx-US-cSh" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="11/9" id="sN9-tq-fAT"/>
+                                    <constraint firstItem="ITP-Ii-Kxu" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="svL-ju-AHo"/>
+                                    <constraint firstItem="vBe-UP-XLj" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="tHE-5j-AeS"/>
+                                    <constraint firstItem="2Ns-dJ-GTr" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="v20-IO-DyU"/>
+                                    <constraint firstItem="e87-pQ-9Fw" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="zzn-mp-C4N"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -767,17 +666,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fKl-ol-FjD" secondAttribute="trailing" id="4Qd-U9-jNe"/>
                             <constraint firstItem="uKi-lM-Te5" firstAttribute="top" secondItem="fKl-ol-FjD" secondAttribute="bottom" id="5kL-b9-jNq"/>
-                            <constraint firstItem="f1c-Yc-XJp" firstAttribute="centerX" secondItem="7mY-mg-DlL" secondAttribute="centerX" id="7kn-GT-dpK"/>
-                            <constraint firstItem="f1c-Yc-XJp" firstAttribute="top" secondItem="lss-I8-Unr" secondAttribute="bottom" constant="20" id="OKp-Nr-Zod"/>
+                            <constraint firstItem="MkH-8x-aL2" firstAttribute="centerX" secondItem="7mY-mg-DlL" secondAttribute="centerX" id="I45-PF-GWt"/>
+                            <constraint firstItem="MkH-8x-aL2" firstAttribute="width" secondItem="7mY-mg-DlL" secondAttribute="width" multiplier="0.9" id="K26-c6-Cco"/>
+                            <constraint firstItem="uKi-lM-Te5" firstAttribute="top" secondItem="MkH-8x-aL2" secondAttribute="bottom" constant="20" id="Met-Pg-bJY"/>
                             <constraint firstItem="lss-I8-Unr" firstAttribute="leading" secondItem="7mY-mg-DlL" secondAttribute="leadingMargin" constant="-20" id="TB0-A1-0WB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lss-I8-Unr" secondAttribute="trailing" constant="-20" id="Zfq-Sq-EUF"/>
-                            <constraint firstItem="99n-7A-0Xy" firstAttribute="centerX" secondItem="7mY-mg-DlL" secondAttribute="centerX" id="db2-X0-vWF"/>
                             <constraint firstItem="fKl-ol-FjD" firstAttribute="top" secondItem="ifL-nf-CA5" secondAttribute="bottom" id="fdw-Sp-ww6"/>
                             <constraint firstItem="fKl-ol-FjD" firstAttribute="leading" secondItem="7mY-mg-DlL" secondAttribute="leading" id="gXc-KV-OxC"/>
-                            <constraint firstItem="h4m-Y2-7x8" firstAttribute="centerX" secondItem="7mY-mg-DlL" secondAttribute="centerX" id="mBN-ID-wWW"/>
-                            <constraint firstItem="h4m-Y2-7x8" firstAttribute="top" secondItem="99n-7A-0Xy" secondAttribute="bottom" constant="20" id="nWZ-Dt-sZE"/>
-                            <constraint firstItem="99n-7A-0Xy" firstAttribute="top" secondItem="f1c-Yc-XJp" secondAttribute="bottom" constant="20" id="rhG-KD-UOG"/>
                             <constraint firstItem="lss-I8-Unr" firstAttribute="top" secondItem="ifL-nf-CA5" secondAttribute="bottom" id="vvq-xp-IXS"/>
+                            <constraint firstItem="MkH-8x-aL2" firstAttribute="top" secondItem="lss-I8-Unr" secondAttribute="bottom" constant="20" id="vxy-oj-mth"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Social" id="tPo-M9-lPB"/>
@@ -1336,14 +1233,17 @@
         <image name="bg_button_normal.png" width="493" height="86"/>
         <image name="bg_button_selected.png" width="493" height="86"/>
         <image name="bg_radio_page.png" width="1800" height="1800"/>
+        <image name="btn_email.png" width="600" height="77"/>
+        <image name="btn_facebook.png" width="600" height="77"/>
+        <image name="btn_instagram.png" width="600" height="77"/>
+        <image name="btn_message.png" width="600" height="77"/>
+        <image name="btn_phone.png" width="600" height="77"/>
         <image name="btn_set_alarm.png" width="552" height="88"/>
-        <image name="call.png" width="64" height="64"/>
-        <image name="email.png" width="64" height="64"/>
-        <image name="facebook.png" width="64" height="64"/>
+        <image name="btn_twitter.png" width="600" height="77"/>
+        <image name="btn_vine.png" width="600" height="77"/>
+        <image name="btn_website.png" width="600" height="77"/>
+        <image name="btn_youtube.png" width="600" height="77"/>
         <image name="hourbg.png" width="78" height="98"/>
-        <image name="ic_building.png" width="64" height="64"/>
-        <image name="ic_calendar.png" width="64" height="64"/>
-        <image name="ic_trophy.png" width="64" height="64"/>
         <image name="icon_alarm.png" width="30" height="30"/>
         <image name="icon_radio.png" width="30" height="29"/>
         <image name="icon_shoutout.png" width="20" height="30"/>
@@ -1351,13 +1251,10 @@
         <image name="icon_web.png" width="30" height="30"/>
         <image name="img_logo.png" width="480" height="334"/>
         <image name="img_logo_full.png" width="640" height="640"/>
-        <image name="instagramicon.png" width="64" height="64"/>
         <image name="new-app-background.jpg" width="640" height="960"/>
         <image name="play.png" width="26" height="26"/>
         <image name="playlisticon.png" width="37" height="39"/>
         <image name="reload_new.png" width="25" height="25"/>
         <image name="shoutoutimage.png" width="960" height="600"/>
-        <image name="twitter.png" width="64" height="64"/>
-        <image name="website.png" width="64" height="64"/>
     </resources>
 </document>
