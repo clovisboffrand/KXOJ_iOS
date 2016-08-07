@@ -21,6 +21,8 @@
 #import "XMLConverter.h"
 #import "XMLDictionary.h"
 
+#import "LocalStorage.h"
+
 #define CLASS_VC NSStringFromClass([self class])
 
 #define kGoogle_Tracking_ID         @"UA-42428688-13"

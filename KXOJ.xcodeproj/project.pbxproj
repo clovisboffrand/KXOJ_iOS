@@ -26,7 +26,6 @@
 		090EC2331D54FE8F000247D2 /* shoutoutimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 090EC2321D54FE8F000247D2 /* shoutoutimage.png */; };
 		090EC2361D5503E7000247D2 /* bg_button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 090EC2341D5503E7000247D2 /* bg_button_normal.png */; };
 		090EC2371D5503E7000247D2 /* bg_button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 090EC2351D5503E7000247D2 /* bg_button_selected.png */; };
-		091083131D00256F0088C319 /* btn_set_alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 091083121D00256F0088C319 /* btn_set_alarm.png */; };
 		0931A1FA1D02716E006A20D1 /* img_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0931A1F91D02716E006A20D1 /* img_logo.png */; };
 		09717FA91D0009E600B992CF /* bg_radio_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 09717FA81D0009E600B992CF /* bg_radio_page.png */; };
 		098182F31D2F48FB003BBE5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098182F21D2F48FB003BBE5E /* Main.storyboard */; };
@@ -36,8 +35,10 @@
 		09961C031D019F6700B1AE08 /* playlisticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09961C011D019F6700B1AE08 /* playlisticon.png */; };
 		09961C041D019F6700B1AE08 /* playlisticon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09961C021D019F6700B1AE08 /* playlisticon@2x.png */; };
 		0996D3E21D0F0538004BB622 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D3E11D0F0538004BB622 /* Reachability.m */; };
+		099D50CF1D57CA9400C51A5C /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099D50CE1D57CA9400C51A5C /* AlarmViewController.m */; };
+		099D50D41D57D16200C51A5C /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 099D50D31D57D16200C51A5C /* LocalStorage.m */; };
+		099D50D61D57EC4400C51A5C /* btn_set_alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 099D50D51D57EC4400C51A5C /* btn_set_alarm.png */; };
 		09AD14E01C8DB7A00089B204 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14DF1C8DB7A00089B204 /* WebViewController.m */; };
-		09AD14E31C8DBD110089B204 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14E21C8DBD110089B204 /* AlarmViewController.m */; };
 		09AD14EC1C8DCD0F0089B204 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14EA1C8DCD0F0089B204 /* ClockViewController.m */; };
 		09AD14F11C8DCFD50089B204 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14F01C8DCFD50089B204 /* SocialViewController.m */; };
 		09AD14F51C8DE08F0089B204 /* SocialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14F31C8DE08F0089B204 /* SocialPageViewController.m */; };
@@ -107,7 +108,6 @@
 		090EC2321D54FE8F000247D2 /* shoutoutimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoutoutimage.png; sourceTree = "<group>"; };
 		090EC2341D5503E7000247D2 /* bg_button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_button_normal.png; sourceTree = "<group>"; };
 		090EC2351D5503E7000247D2 /* bg_button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_button_selected.png; sourceTree = "<group>"; };
-		091083121D00256F0088C319 /* btn_set_alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_set_alarm.png; sourceTree = "<group>"; };
 		0931A1F91D02716E006A20D1 /* img_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo.png; sourceTree = "<group>"; };
 		093C3AEC1BB8797500E72B1B /* KXOJ_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KXOJ_Prefix.pch; sourceTree = "<group>"; };
 		09717FA81D0009E600B992CF /* bg_radio_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_radio_page.png; sourceTree = "<group>"; };
@@ -121,10 +121,13 @@
 		09961C021D019F6700B1AE08 /* playlisticon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playlisticon@2x.png"; sourceTree = "<group>"; };
 		0996D3E01D0F0538004BB622 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0996D3E11D0F0538004BB622 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		099D50CD1D57CA9400C51A5C /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		099D50CE1D57CA9400C51A5C /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		099D50D21D57D16200C51A5C /* LocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorage.h; sourceTree = "<group>"; };
+		099D50D31D57D16200C51A5C /* LocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorage.m; sourceTree = "<group>"; };
+		099D50D51D57EC4400C51A5C /* btn_set_alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_set_alarm.png; sourceTree = "<group>"; };
 		09AD14DE1C8DB7A00089B204 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		09AD14DF1C8DB7A00089B204 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		09AD14E11C8DBD110089B204 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
-		09AD14E21C8DBD110089B204 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		09AD14E91C8DCD0F0089B204 /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		09AD14EA1C8DCD0F0089B204 /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		09AD14EF1C8DCFD50089B204 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
@@ -286,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				4A05E3C61B5A2865000E7305 /* hourbg.png */,
-				091083121D00256F0088C319 /* btn_set_alarm.png */,
+				099D50D51D57EC4400C51A5C /* btn_set_alarm.png */,
 			);
 			name = AlarmTab;
 			sourceTree = "<group>";
@@ -299,6 +302,15 @@
 				090EC2351D5503E7000247D2 /* bg_button_selected.png */,
 			);
 			name = ShoutOutTab;
+			sourceTree = "<group>";
+		};
+		099D50D11D57D13100C51A5C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				099D50D21D57D16200C51A5C /* LocalStorage.h */,
+				099D50D31D57D16200C51A5C /* LocalStorage.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		09AD14E41C8DC9E20089B204 /* RadioModule */ = {
@@ -326,8 +338,8 @@
 		09AD14E61C8DCA000089B204 /* AlarmModule */ = {
 			isa = PBXGroup;
 			children = (
-				09AD14E11C8DBD110089B204 /* AlarmViewController.h */,
-				09AD14E21C8DBD110089B204 /* AlarmViewController.m */,
+				099D50CD1D57CA9400C51A5C /* AlarmViewController.h */,
+				099D50CE1D57CA9400C51A5C /* AlarmViewController.m */,
 				09AD14E91C8DCD0F0089B204 /* ClockViewController.h */,
 				09AD14EA1C8DCD0F0089B204 /* ClockViewController.m */,
 			);
@@ -420,6 +432,7 @@
 			children = (
 				4A05E3881B5A2865000E7305 /* Commons */,
 				4A05E4011B5A2865000E7305 /* ViewControllers */,
+				099D50D11D57D13100C51A5C /* Utils */,
 				4A05E3941B5A2865000E7305 /* AppDelegate.h */,
 				4A05E3951B5A2865000E7305 /* AppDelegate.m */,
 				098182F21D2F48FB003BBE5E /* Main.storyboard */,
@@ -584,6 +597,7 @@
 				4A05E4831B5A2865000E7305 /* Stop.png in Resources */,
 				090EC22D1D54F6FC000247D2 /* icon_shoutout@2x.png in Resources */,
 				4A05E4E31B5AC97C000E7305 /* btn_back.png in Resources */,
+				099D50D61D57EC4400C51A5C /* btn_set_alarm.png in Resources */,
 				09D317371D577C88006E923D /* btn_message.png in Resources */,
 				090EC2331D54FE8F000247D2 /* shoutoutimage.png in Resources */,
 				0986B3761D20ADF10057C34C /* img_logo_full.png in Resources */,
@@ -603,7 +617,6 @@
 				090EC2311D54F6FC000247D2 /* icon_web@2x.png in Resources */,
 				0931A1FA1D02716E006A20D1 /* img_logo.png in Resources */,
 				090EC22F1D54F6FC000247D2 /* icon_social@2x.png in Resources */,
-				091083131D00256F0088C319 /* btn_set_alarm.png in Resources */,
 				090C8EAF1D2F97FD00DB3CBA /* arrow_left.png in Resources */,
 				09717FA91D0009E600B992CF /* bg_radio_page.png in Resources */,
 				4A05E4551B5A2865000E7305 /* hourbg.png in Resources */,
@@ -673,7 +686,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AD14FA1C8DEE0F0089B204 /* ShoutOutViewController.m in Sources */,
-				09AD14E31C8DBD110089B204 /* AlarmViewController.m in Sources */,
 				4A05E4C61B5A3108000E7305 /* XMLDictionary.m in Sources */,
 				09961BF81D01933B00B1AE08 /* NSString+HTML.m in Sources */,
 				4A05E4C51B5A3108000E7305 /* XMLConverter.m in Sources */,
@@ -684,6 +696,8 @@
 				4A05E42D1B5A2865000E7305 /* CommonHelpers.m in Sources */,
 				09AD14F51C8DE08F0089B204 /* SocialPageViewController.m in Sources */,
 				4A05E4DD1B5AC47B000E7305 /* NavigationBarCustom.m in Sources */,
+				099D50D41D57D16200C51A5C /* LocalStorage.m in Sources */,
+				099D50CF1D57CA9400C51A5C /* AlarmViewController.m in Sources */,
 				09CA0B8B1D0123B7006AFFCD /* RecentSongViewController.m in Sources */,
 				4A05E4321B5A2865000E7305 /* AppDelegate.m in Sources */,
 				09AD14EC1C8DCD0F0089B204 /* ClockViewController.m in Sources */,
@@ -716,8 +730,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = comRadioservers.kxoj;
 				PRODUCT_NAME = KXOJ;
-				PROVISIONING_PROFILE = "0e08c94d-78f5-42ee-8d32-0912901a0260";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0e08c94d-78f5-42ee-8d32-0912901a0260";
+				PROVISIONING_PROFILE = "089444d8-f2d6-4bb0-a81b-fe36f88bd4c4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "089444d8-f2d6-4bb0-a81b-fe36f88bd4c4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
