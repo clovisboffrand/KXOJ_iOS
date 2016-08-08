@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="1671" y="-20"/>
         </scene>
-        <!--Website-->
+        <!--Concerts-->
         <scene sceneID="YGE-D7-KXZ">
             <objects>
                 <viewController id="c3O-zE-NL1" customClass="WebViewController" sceneMemberID="viewController">
@@ -237,7 +237,7 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icon_web.png" id="tU7-no-FV0"/>
-                    <navigationItem key="navigationItem" title="Website" id="GNs-nj-KId"/>
+                    <navigationItem key="navigationItem" title="Concerts" id="GNs-nj-KId"/>
                     <connections>
                         <outlet property="adWebView" destination="bQC-mb-K2O" id="ekR-NX-J0x"/>
                         <outlet property="mainWebView" destination="9a1-bW-T9A" id="2iZ-3O-dlD"/>
