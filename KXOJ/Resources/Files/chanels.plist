@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>KXOJ</string>
+		<key>description</key>
+		<string>Christian Music</string>
+		<key>stream</key>
+		<string>http://ice7.securenetsystems.net/KXOJ</string>
+		<key>feed</key>
+		<string>https://radio.securenetsystems.net/dx/get_playlist_history.cfm?stationCallSign=KXOJ&amp;authTokenWeb=6A13521C-3D74-4CED-8909-631217C8FF21&amp;rss=true</string>
+		<key>events_link</key>
+		<string>http://kxoj.com/category/events/</string>
+		<key>logo</key>
+		<string>img_logo1</string>
+		<key>color</key>
+		<string>0e1e7d</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>KXOJ2</string>
+		<key>description</key>
+		<string>Christian Hit Music</string>
+		<key>stream</key>
+		<string>http://ice41.securenetsystems.net/KXOJ2</string>
+		<key>feed</key>
+		<string>https://radio.securenetsystems.net/dx/get_playlist_history.cfm?stationCallSign=KXOJ2&amp;authTokenWeb=2F1427A7-602F-419D-94F3-0AC3C8064583&amp;rss=true</string>
+		<key>events_link</key>
+		<string>http://kxoj2.com/events/category/concerts/</string>
+		<key>logo</key>
+		<string>img_logo2</string>
+		<key>color</key>
+		<string>ce036f</string>
+	</dict>
+</array>
+</plist>

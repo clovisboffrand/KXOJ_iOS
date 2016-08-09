@@ -77,7 +77,7 @@
 
 - (void)getSongList {
     feeds = [[NSMutableArray alloc] init];
-    parser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:FEED_URL]];
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:[AppSettings shared].feedLink]];
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];

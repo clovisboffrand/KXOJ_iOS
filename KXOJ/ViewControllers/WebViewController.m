@@ -18,8 +18,6 @@
 
 @end
 
-#define WEB_URL @"http://bristolbeat.com/category/events/"
-
 @implementation WebViewController
 
 - (void)viewDidLoad {
@@ -35,7 +33,7 @@
     [super viewWillAppear:animated];
     
     // Load web page from url.
-    [mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:WEB_URL]]];
+    [mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[AppSettings shared].eventsLink]]];
 }
 
 #pragma mark - Setup Banner View

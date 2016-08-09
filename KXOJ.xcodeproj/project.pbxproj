@@ -63,6 +63,8 @@
 		09F634DC1D5A321000F116DF /* img_logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DA1D5A321000F116DF /* img_logo1.png */; };
 		09F634DD1D5A321000F116DF /* img_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DB1D5A321000F116DF /* img_logo2.png */; };
 		09F634DF1D5A37CF00F116DF /* bg_btn_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DE1D5A37CF00F116DF /* bg_btn_white.png */; };
+		09F634E21D5A3A2C00F116DF /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F634E11D5A3A2C00F116DF /* AppSettings.m */; };
+		09F634E41D5A3A6700F116DF /* chanels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F634E31D5A3A6700F116DF /* chanels.plist */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
@@ -160,6 +162,9 @@
 		09F634DA1D5A321000F116DF /* img_logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo1.png; sourceTree = "<group>"; };
 		09F634DB1D5A321000F116DF /* img_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo2.png; sourceTree = "<group>"; };
 		09F634DE1D5A37CF00F116DF /* bg_btn_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_btn_white.png; sourceTree = "<group>"; };
+		09F634E01D5A3A2C00F116DF /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		09F634E11D5A3A2C00F116DF /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		09F634E31D5A3A6700F116DF /* chanels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chanels.plist; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* KXOJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KXOJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -311,6 +316,8 @@
 			children = (
 				099D50D21D57D16200C51A5C /* LocalStorage.h */,
 				099D50D31D57D16200C51A5C /* LocalStorage.m */,
+				09F634E01D5A3A2C00F116DF /* AppSettings.h */,
+				09F634E11D5A3A2C00F116DF /* AppSettings.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -476,6 +483,7 @@
 		4A05E3A21B5A2865000E7305 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				09F634E31D5A3A6700F116DF /* chanels.plist */,
 				4A05E3A31B5A2865000E7305 /* Html */,
 			);
 			name = Files;
@@ -633,6 +641,7 @@
 				090EC2361D5503E7000247D2 /* bg_button_normal.png in Resources */,
 				09D317291D577C45006E923D /* btn_twitter.png in Resources */,
 				090EC2311D54F6FC000247D2 /* icon_web@2x.png in Resources */,
+				09F634E41D5A3A6700F116DF /* chanels.plist in Resources */,
 				09AC5BB01D59AAB20062369B /* ic_volume_down.png in Resources */,
 				090EC22F1D54F6FC000247D2 /* icon_social@2x.png in Resources */,
 				090C8EAF1D2F97FD00DB3CBA /* arrow_left.png in Resources */,
@@ -720,6 +729,7 @@
 				4A05E4321B5A2865000E7305 /* AppDelegate.m in Sources */,
 				09AD14EC1C8DCD0F0089B204 /* ClockViewController.m in Sources */,
 				0996D3E21D0F0538004BB622 /* Reachability.m in Sources */,
+				09F634E21D5A3A2C00F116DF /* AppSettings.m in Sources */,
 				4A05E4AA1B5A290A000E7305 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

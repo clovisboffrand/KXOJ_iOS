@@ -254,7 +254,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    [manager GET:FEED_URL parameters:nil progress:nil success:^(NSURLSessionDataTask * task, id responseObject) {
+    [manager GET:[AppSettings shared].feedLink parameters:nil progress:nil success:^(NSURLSessionDataTask * task, id responseObject) {
         feeds = [NSMutableArray array];
         
         NSXMLParser *parser = [[NSXMLParser alloc] initWithData:responseObject];
@@ -322,7 +322,7 @@
     [self updateNowPlayingInfoWithTitle:lblTitle.text artist:lblArtist.text image:nil];
     
     NSString *imageURL = [currentSong[@"songmedia"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    UIImage *placeholder = [UIImage imageNamed:@"img_logo_full"];
+    UIImage *placeholder = [UIImage imageNamed:[AppSettings shared].logo];
     
     __weak __typeof(self) weakSelf = self;
     [ivCoverImage setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:imageURL]] placeholderImage:placeholder success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
