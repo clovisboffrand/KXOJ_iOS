@@ -37,7 +37,7 @@
 #define SMS_NUMBER2     @"539-302-4945"
 
 #define EMAIL_ADDRESS1  @"onair@kxoj.com"
-#define EMAIL_ADDRESS2  @"studio@bristolbeat.com"
+#define EMAIL_ADDRESS2  @"studio@kxoj2.com"
 
 @implementation SocialViewController
 
