@@ -24,7 +24,7 @@
     _lblTitle.text = [song[@"title"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     _lblDetail.text = [song[@"songdescription"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    UIImage *image = [UIImage imageNamed:@"img_top_logo"];
+    UIImage *image = [UIImage imageNamed:[AppSettings shared].logo];
     NSString *imageURL = [song[@"songmedia"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     [_ivCoverImage setImageWithURL:[NSURL URLWithString:imageURL] placeholderImage:image];
 }

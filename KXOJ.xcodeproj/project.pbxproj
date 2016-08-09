@@ -27,7 +27,6 @@
 		090EC2361D5503E7000247D2 /* bg_button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 090EC2341D5503E7000247D2 /* bg_button_normal.png */; };
 		090EC2371D5503E7000247D2 /* bg_button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 090EC2351D5503E7000247D2 /* bg_button_selected.png */; };
 		098182F31D2F48FB003BBE5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098182F21D2F48FB003BBE5E /* Main.storyboard */; };
-		0986B3761D20ADF10057C34C /* img_logo_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0986B3751D20ADF10057C34C /* img_logo_full.png */; };
 		09961BF81D01933B00B1AE08 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09961BF71D01933B00B1AE08 /* NSString+HTML.m */; };
 		09961BFF1D0197D400B1AE08 /* PlaylistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09961BFD1D0197D400B1AE08 /* PlaylistCell.m */; };
 		0996D3E21D0F0538004BB622 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996D3E11D0F0538004BB622 /* Reachability.m */; };
@@ -46,7 +45,6 @@
 		09AD14F11C8DCFD50089B204 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14F01C8DCFD50089B204 /* SocialViewController.m */; };
 		09AD14F51C8DE08F0089B204 /* SocialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14F31C8DE08F0089B204 /* SocialPageViewController.m */; };
 		09AD14FA1C8DEE0F0089B204 /* ShoutOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD14F91C8DEE0F0089B204 /* ShoutOutViewController.m */; };
-		09CA0B841D011CC7006AFFCD /* img_top_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CA0B831D011CC7006AFFCD /* img_top_logo.png */; };
 		09CA0B8B1D0123B7006AFFCD /* RecentSongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA0B891D0123B7006AFFCD /* RecentSongViewController.m */; };
 		09D317271D5777A5006E923D /* btn_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317261D5777A5006E923D /* btn_facebook.png */; };
 		09D317291D577C45006E923D /* btn_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317281D577C45006E923D /* btn_twitter.png */; };
@@ -114,7 +112,6 @@
 		090EC2351D5503E7000247D2 /* bg_button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_button_selected.png; sourceTree = "<group>"; };
 		093C3AEC1BB8797500E72B1B /* KXOJ_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KXOJ_Prefix.pch; sourceTree = "<group>"; };
 		098182F21D2F48FB003BBE5E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		0986B3751D20ADF10057C34C /* img_logo_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo_full.png; sourceTree = "<group>"; };
 		09961BF61D01933B00B1AE08 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		09961BF71D01933B00B1AE08 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		09961BFC1D0197D400B1AE08 /* PlaylistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistCell.h; sourceTree = "<group>"; };
@@ -143,7 +140,6 @@
 		09AD14F31C8DE08F0089B204 /* SocialPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialPageViewController.m; sourceTree = "<group>"; };
 		09AD14F81C8DEE0F0089B204 /* ShoutOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoutOutViewController.h; sourceTree = "<group>"; };
 		09AD14F91C8DEE0F0089B204 /* ShoutOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoutOutViewController.m; sourceTree = "<group>"; };
-		09CA0B831D011CC7006AFFCD /* img_top_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_top_logo.png; sourceTree = "<group>"; };
 		09CA0B881D0123B7006AFFCD /* RecentSongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSongViewController.h; sourceTree = "<group>"; };
 		09CA0B891D0123B7006AFFCD /* RecentSongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSongViewController.m; sourceTree = "<group>"; };
 		09D317261D5777A5006E923D /* btn_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_facebook.png; sourceTree = "<group>"; };
@@ -254,8 +250,6 @@
 				09AC5BAC1D59AAA60062369B /* btn_stop.png */,
 				09AC5BAE1D59AAB20062369B /* ic_volume_down.png */,
 				09AC5BAF1D59AAB20062369B /* ic_volume_up.png */,
-				0986B3751D20ADF10057C34C /* img_logo_full.png */,
-				09CA0B831D011CC7006AFFCD /* img_top_logo.png */,
 			);
 			name = RadioTab;
 			sourceTree = "<group>";
@@ -605,7 +599,6 @@
 				09AC5BA91D59AA970062369B /* btn_play.png in Resources */,
 				090EC22B1D54F6FC000247D2 /* icon_radio@2x.png in Resources */,
 				09D317331D577C77006E923D /* btn_phone.png in Resources */,
-				09CA0B841D011CC7006AFFCD /* img_top_logo.png in Resources */,
 				09D3172B1D577C51006E923D /* btn_instagram.png in Resources */,
 				098182F31D2F48FB003BBE5E /* Main.storyboard in Resources */,
 				090EC2371D5503E7000247D2 /* bg_button_selected.png in Resources */,
@@ -628,7 +621,6 @@
 				09D317371D577C88006E923D /* btn_message.png in Resources */,
 				090EC2331D54FE8F000247D2 /* shoutoutimage.png in Resources */,
 				09F634DF1D5A37CF00F116DF /* bg_btn_white.png in Resources */,
-				0986B3761D20ADF10057C34C /* img_logo_full.png in Resources */,
 				09AC5BAD1D59AAA60062369B /* btn_stop.png in Resources */,
 				090EC22E1D54F6FC000247D2 /* icon_social.png in Resources */,
 				090EC2291D54F6FC000247D2 /* icon_alarm@2x.png in Resources */,
