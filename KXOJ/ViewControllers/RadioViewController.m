@@ -150,9 +150,9 @@
 
 - (void)updatebuttonstatus {
     if (self.radiosound.rate == 1.0) {
-        [playpausebutton setImage:[UIImage imageNamed:@"pause.png"] forState:UIControlStateNormal];
+        [playpausebutton setImage:[UIImage imageNamed:@"btn_pause.png"] forState:UIControlStateNormal];
     } else {
-        [playpausebutton setImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
+        [playpausebutton setImage:[UIImage imageNamed:@"btn_play.png"] forState:UIControlStateNormal];
     }
 }
 
@@ -188,14 +188,14 @@
     }
     
     // Update image states to reflect "Pause" option
-    [playpausebutton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    [playpausebutton setImage:[UIImage imageNamed:@"btn_pause"] forState:UIControlStateNormal];
 }
 
 - (void)pauseCurrentTrack {
     [self.radiosound pause];
     
     // Update image states to reflect "Play" option
-    [playpausebutton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    [playpausebutton setImage:[UIImage imageNamed:@"btn_play"] forState:UIControlStateNormal];
 }
 
 #pragma mark - Notification Stream Radio
