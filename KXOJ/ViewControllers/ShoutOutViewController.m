@@ -173,7 +173,7 @@
 - (void)stopRecording {
     self.btnRecord.selected = NO;
     [self.btnRecord setTitle:@"Record Your Voice" forState:UIControlStateNormal];
-    [self.btnRecord setTitleColor:UIColorWithHexCode(TINT_DEF_COLR, 1) forState:UIControlStateNormal];
+    [self.btnRecord setTitleColor:UIColorWithHexCode(@"c4026c", 1) forState:UIControlStateNormal];
     
     isRecording = NO;
     [audioRecorder stop];

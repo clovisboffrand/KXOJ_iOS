@@ -215,7 +215,7 @@
     if (!success) {
     }
     
-    NSURL *url = [NSURL URLWithString:STREAM_URL];
+    NSURL *url = [NSURL URLWithString:[AppSettings shared].streamLink];
     self.radiosound = [[AVPlayer alloc] initWithURL:url];
     [self.radiosound play];
     [self updatebuttonstatus];

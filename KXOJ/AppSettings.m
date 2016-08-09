@@ -34,10 +34,11 @@
 
 - (void)updateWith:(NSDictionary *)channelInfo {
     self.channelId = channelInfo[@"id"];
-    self.logo = channelInfo[@"logo"];
     self.streamLink = channelInfo[@"stream"];
     self.feedLink = channelInfo[@"feed"];
     self.eventsLink = channelInfo[@"events_link"];
+    self.logo = channelInfo[@"logo"];
+    self.color = channelInfo[@"color"];
 }
 
 @end

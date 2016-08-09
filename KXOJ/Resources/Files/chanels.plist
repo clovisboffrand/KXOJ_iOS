@@ -18,7 +18,7 @@
 		<key>logo</key>
 		<string>img_logo1</string>
 		<key>color</key>
-		<string>0e1e7d</string>
+		<string>c4026c</string>
 	</dict>
 	<dict>
 		<key>id</key>
@@ -36,7 +36,7 @@
 		<key>logo</key>
 		<string>img_logo2</string>
 		<key>color</key>
-		<string>ce036f</string>
+		<string>c4026c</string>
 	</dict>
 </array>
 </plist>

@@ -24,7 +24,7 @@
 }
 
 + (void)customNavigationBar:(UINavigationBar *)naviBar {
-    [naviBar setBarTintColor:UIColorWithHexCode(TINT_DEF_COLR, 1)];
+    [naviBar setBarTintColor:UIColorWithHexCode([AppSettings shared].color, 1)];
     [naviBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:19],
                                       NSForegroundColorAttributeName:UIColorFromString(@"ffffff", 1)}];
     naviBar.translucent = NO;

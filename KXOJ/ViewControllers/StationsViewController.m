@@ -43,4 +43,14 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - Button Action Methods
+
+- (IBAction)didTapPlayButton:(UIButton *)button {
+    if (button.tag == 1) {
+        
+    }
+}
+
 @end
+
+

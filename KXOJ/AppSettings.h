@@ -11,10 +11,11 @@
 @interface AppSettings : NSObject
 
 @property (nonatomic, strong) NSNumber *channelId;
-@property (nonatomic, strong) NSString *logo;
 @property (nonatomic, strong) NSString *streamLink;
 @property (nonatomic, strong) NSString *feedLink;
 @property (nonatomic, strong) NSString *eventsLink;
+@property (nonatomic, strong) NSString *logo;
+@property (nonatomic, strong) NSString *color;
 
 + (AppSettings *)shared;
 
