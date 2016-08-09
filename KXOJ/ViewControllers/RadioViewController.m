@@ -60,6 +60,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbutton) name:@"TogglePlayPause" object:nil];
     
     // Add notification methods
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadRadioStreaming) name:@"kNotiticationReloadRadioStreamingLink" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSetAlarm) name:@"setAlarm" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didWakeup) name:@"didWakeup" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStream) name:@"updateStream" object:nil];

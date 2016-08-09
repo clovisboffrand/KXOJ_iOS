@@ -7,6 +7,7 @@
 //
 
 #import "StationsViewController.h"
+#import "Header.h"
 
 @interface StationsViewController ()
 {
@@ -35,6 +36,18 @@
     viewChannel2.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5f].CGColor;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if ([AppSettings shared].channelId.integerValue == 1) {
+        btnChannel1.enabled = NO;
+        [btnChannel1 setTitle:@"Playing" forState:UIControlStateNormal];
+    } else {
+        btnChannel2.enabled = NO;
+        [btnChannel2 setTitle:@"Playing" forState:UIControlStateNormal];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -47,10 +60,13 @@
 
 - (IBAction)didTapPlayButton:(UIButton *)button {
     if (button.tag == 1) {
-        
+        [[AppSettings shared] loadFirstChannel];
+    } else {
+        [[AppSettings shared] loadSecondChannel];
     }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotiticationReloadRadioStreamingLink" object:nil];
+    [self cancelView];
 }
 
 @end
-
 

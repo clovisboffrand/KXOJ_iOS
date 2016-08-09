@@ -19,23 +19,25 @@
 
 @end
 
-#define FACEBOOK_URL_1  @"http://www.facebook.com/kxojtulsa"
-#define FACEBOOK_URL_2  @"http://facebook.com/kxoj2"
+#define FACEBOOK_URL1   @"http://www.facebook.com/kxojtulsa"
+#define FACEBOOK_URL2   @"http://facebook.com/kxoj2"
 
-#define TWITTER_URL_1   @"http://twitter.com/kxoj"
-#define TWITTER_URL_2   @"http://twitter.com/kxojhd2"
+#define TWITTER_URL1    @"http://twitter.com/kxoj"
+#define TWITTER_URL2    @"http://twitter.com/kxojhd2"
 
 #define INSTAGRAM_URL   @"http://instagram.com/kxoj2"
 #define VINE_URL        @"https://vine.co/u/1230442394806587392"
 #define YOUTUBE_URL     @"http://www.youtube.com/kxoj"
 
-#define WEBSITE_URL_1   @"http://www.kxoj.com"
-#define WEBSITE_URL_2   @"http://kxoj2.com"
+#define WEBSITE_URL1    @"http://www.kxoj.com"
+#define WEBSITE_URL2    @"http://kxoj2.com"
 
 #define PHONE_NUMBER    @"918-460-5965"
+#define SMS_NUMBER1     @"918-512-1009"
+#define SMS_NUMBER2     @"539-302-4945"
 
-#define EMAIL_ADDRESS_1 @"onair@kxoj.com"
-#define EMAIL_ADDRESS_2 @"studio@bristolbeat.com"
+#define EMAIL_ADDRESS1  @"onair@kxoj.com"
+#define EMAIL_ADDRESS2  @"studio@bristolbeat.com"
 
 @implementation SocialViewController
 
@@ -70,11 +72,19 @@
     switch (button.tag) {
         case 100:
             viewController.title = @"Facebook";
-            viewController.pageURL = FACEBOOK_URL_1;
+            if ([[AppSettings shared].channelId integerValue] == 1) {
+                viewController.pageURL = FACEBOOK_URL1;
+            } else {
+                viewController.pageURL = FACEBOOK_URL2;
+            }
             break;
         case 101:
             viewController.title = @"Twitter";
-            viewController.pageURL = TWITTER_URL_1;
+            if ([[AppSettings shared].channelId integerValue] == 1) {
+                viewController.pageURL = TWITTER_URL1;
+            } else {
+                viewController.pageURL = TWITTER_URL2;
+            }
             break;
         case 102:
             viewController.title = @"Instagram";
@@ -90,7 +100,11 @@
             break;
         case 105:
             viewController.title = @"Website";
-            viewController.pageURL = WEBSITE_URL_1;
+            if ([[AppSettings shared].channelId integerValue] == 1) {
+                viewController.pageURL = WEBSITE_URL1;
+            } else {
+                viewController.pageURL = WEBSITE_URL2;
+            }
             break;
     }
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:nil action:nil];
@@ -119,7 +133,13 @@
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init] ;
     if ([MFMessageComposeViewController canSendText]) {
         controller.body = @"";
-        controller.recipients = [NSArray arrayWithObjects:PHONE_NUMBER, nil];
+        NSString *number;
+        if ([AppSettings shared].channelId.integerValue == 1) {
+            number = SMS_NUMBER1;
+        } else {
+            number = SMS_NUMBER2;
+        }
+        controller.recipients = [NSArray arrayWithObjects:number, nil];
         controller.messageComposeDelegate = self;
         [self presentViewController:controller animated:YES completion:nil];
     }
@@ -144,7 +164,14 @@
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     [[picker navigationBar] setTintColor:[UIColor blackColor]];
     picker.mailComposeDelegate = self;
-    [picker setToRecipients:[NSArray arrayWithObjects:EMAIL_ADDRESS_1, nil]];
+    
+    NSString *address;
+    if ([AppSettings shared].channelId.integerValue == 1) {
+        address = EMAIL_ADDRESS1;
+    } else {
+        address = EMAIL_ADDRESS2;
+    }
+    [picker setToRecipients:[NSArray arrayWithObjects:address, nil]];
     [picker setCcRecipients:nil];
     [picker setBccRecipients:nil];
     [picker setSubject:@"Mobile App Email"];
@@ -152,7 +179,13 @@
 }
 
 - (void)launchMailAppOnDevice {
-    NSString *recipients = [NSString stringWithFormat:@"mailto:%@?cc=&subject=iRadio Email", EMAIL_ADDRESS_1];
+    NSString *address;
+    if ([AppSettings shared].channelId.integerValue == 1) {
+        address = EMAIL_ADDRESS1;
+    } else {
+        address = EMAIL_ADDRESS2;
+    }
+    NSString *recipients = [NSString stringWithFormat:@"mailto:%@?cc=&subject=iRadio Email", address];
     NSString *body = [NSString stringWithFormat:@"&body="];
     NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
     email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

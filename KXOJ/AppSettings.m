@@ -28,8 +28,17 @@
 #pragma mark - Private Methods
 
 - (void)loadDefaultChannel {
+    [self loadFirstChannel];
+}
+
+- (void)loadFirstChannel {
     NSArray *channels = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"chanels" ofType:@"plist"]];
     [self updateWith:channels[0]];
+}
+
+- (void)loadSecondChannel {
+    NSArray *channels = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"chanels" ofType:@"plist"]];
+    [self updateWith:channels[1]];
 }
 
 - (void)updateWith:(NSDictionary *)channelInfo {

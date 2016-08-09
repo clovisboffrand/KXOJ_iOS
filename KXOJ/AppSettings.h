@@ -21,4 +21,8 @@
 
 - (void)updateWith:(NSDictionary *)channelInfo;
 
+- (void)loadFirstChannel;
+
+- (void)loadSecondChannel;
+
 @end
