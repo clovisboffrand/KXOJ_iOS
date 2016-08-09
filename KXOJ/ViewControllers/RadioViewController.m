@@ -11,7 +11,6 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "Header.h"
-#import "RecentSongViewController.h"
 #import "NSString+HTML.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import "Reachability.h"
@@ -173,8 +172,15 @@
     [self pauseCurrentTrack];
 }
 
+- (IBAction)didTapStations:(id)sender {
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"StationsViewController"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [navController.navigationBar custom];
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
 - (IBAction)didTapGoRecent:(id)sender {
-    RecentSongViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RecentSongViewController"];
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RecentSongViewController"];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
     [navController.navigationBar custom];
     [self presentViewController:navController animated:YES completion:nil];

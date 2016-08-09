@@ -57,6 +57,12 @@
 		09D317331D577C77006E923D /* btn_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317321D577C77006E923D /* btn_phone.png */; };
 		09D317351D577C82006E923D /* btn_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317341D577C82006E923D /* btn_email.png */; };
 		09D317371D577C88006E923D /* btn_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317361D577C88006E923D /* btn_message.png */; };
+		09F634D41D5A281600F116DF /* StationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F634D31D5A281500F116DF /* StationsViewController.m */; };
+		09F634D81D5A2EDA00F116DF /* img_channel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634D61D5A2EDA00F116DF /* img_channel1.png */; };
+		09F634D91D5A2EDA00F116DF /* img_channel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634D71D5A2EDA00F116DF /* img_channel2.png */; };
+		09F634DC1D5A321000F116DF /* img_logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DA1D5A321000F116DF /* img_logo1.png */; };
+		09F634DD1D5A321000F116DF /* img_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DB1D5A321000F116DF /* img_logo2.png */; };
+		09F634DF1D5A37CF00F116DF /* bg_btn_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634DE1D5A37CF00F116DF /* bg_btn_white.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
@@ -147,6 +153,13 @@
 		09D317321D577C77006E923D /* btn_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_phone.png; sourceTree = "<group>"; };
 		09D317341D577C82006E923D /* btn_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_email.png; sourceTree = "<group>"; };
 		09D317361D577C88006E923D /* btn_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_message.png; sourceTree = "<group>"; };
+		09F634D21D5A281500F116DF /* StationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsViewController.h; sourceTree = "<group>"; };
+		09F634D31D5A281500F116DF /* StationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationsViewController.m; sourceTree = "<group>"; };
+		09F634D61D5A2EDA00F116DF /* img_channel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_channel1.png; sourceTree = "<group>"; };
+		09F634D71D5A2EDA00F116DF /* img_channel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_channel2.png; sourceTree = "<group>"; };
+		09F634DA1D5A321000F116DF /* img_logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo1.png; sourceTree = "<group>"; };
+		09F634DB1D5A321000F116DF /* img_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo2.png; sourceTree = "<group>"; };
+		09F634DE1D5A37CF00F116DF /* bg_btn_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_btn_white.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* KXOJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KXOJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -228,6 +241,7 @@
 		0910830D1D001FD10088C319 /* RadioTab */ = {
 			isa = PBXGroup;
 			children = (
+				09F634D51D5A2ED100F116DF /* StationsPage */,
 				099D50D71D58175F00C51A5C /* btn_recent_playlist.png */,
 				099D50D81D58175F00C51A5C /* btn_stations.png */,
 				09AC5BA81D59AA970062369B /* btn_play.png */,
@@ -310,6 +324,8 @@
 				09CA0B891D0123B7006AFFCD /* RecentSongViewController.m */,
 				09961BFC1D0197D400B1AE08 /* PlaylistCell.h */,
 				09961BFD1D0197D400B1AE08 /* PlaylistCell.m */,
+				09F634D21D5A281500F116DF /* StationsViewController.h */,
+				09F634D31D5A281500F116DF /* StationsViewController.m */,
 			);
 			name = RadioModule;
 			sourceTree = "<group>";
@@ -352,6 +368,18 @@
 				09AD14F91C8DEE0F0089B204 /* ShoutOutViewController.m */,
 			);
 			name = ShoutOutModule;
+			sourceTree = "<group>";
+		};
+		09F634D51D5A2ED100F116DF /* StationsPage */ = {
+			isa = PBXGroup;
+			children = (
+				09F634D61D5A2EDA00F116DF /* img_channel1.png */,
+				09F634D71D5A2EDA00F116DF /* img_channel2.png */,
+				09F634DA1D5A321000F116DF /* img_logo1.png */,
+				09F634DB1D5A321000F116DF /* img_logo2.png */,
+				09F634DE1D5A37CF00F116DF /* bg_btn_white.png */,
+			);
+			name = StationsPage;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -575,9 +603,12 @@
 				090EC2371D5503E7000247D2 /* bg_button_selected.png in Resources */,
 				09D3172F1D577C66006E923D /* btn_youtube.png in Resources */,
 				099D50DA1D58175F00C51A5C /* btn_stations.png in Resources */,
+				09F634D81D5A2EDA00F116DF /* img_channel1.png in Resources */,
+				09F634D91D5A2EDA00F116DF /* img_channel2.png in Resources */,
 				E125FB551BB4664F0043F073 /* Images.xcassets in Resources */,
 				09D317271D5777A5006E923D /* btn_facebook.png in Resources */,
 				090EC2281D54F6FC000247D2 /* icon_alarm.png in Resources */,
+				09F634DD1D5A321000F116DF /* img_logo2.png in Resources */,
 				090C8EB01D2F97FD00DB3CBA /* arrow_right.png in Resources */,
 				090C8EA91D2F97BE00DB3CBA /* arrow_left@2x.png in Resources */,
 				4A05E4341B5A2865000E7305 /* iframe.html in Resources */,
@@ -588,12 +619,14 @@
 				099D50D61D57EC4400C51A5C /* btn_set_alarm.png in Resources */,
 				09D317371D577C88006E923D /* btn_message.png in Resources */,
 				090EC2331D54FE8F000247D2 /* shoutoutimage.png in Resources */,
+				09F634DF1D5A37CF00F116DF /* bg_btn_white.png in Resources */,
 				0986B3761D20ADF10057C34C /* img_logo_full.png in Resources */,
 				09AC5BAD1D59AAA60062369B /* btn_stop.png in Resources */,
 				090EC22E1D54F6FC000247D2 /* icon_social.png in Resources */,
 				090EC2291D54F6FC000247D2 /* icon_alarm@2x.png in Resources */,
 				09D317311D577C6D006E923D /* btn_website.png in Resources */,
 				090C8EAB1D2F97BE00DB3CBA /* reload_new@2x.png in Resources */,
+				09F634DC1D5A321000F116DF /* img_logo1.png in Resources */,
 				099D50D91D58175F00C51A5C /* btn_recent_playlist.png in Resources */,
 				4A05E48E1B5A2865000E7305 /* new-app-background.jpg in Resources */,
 				09D3172D1D577C59006E923D /* btn_vine.png in Resources */,
@@ -673,6 +706,7 @@
 				4A05E4C61B5A3108000E7305 /* XMLDictionary.m in Sources */,
 				09961BF81D01933B00B1AE08 /* NSString+HTML.m in Sources */,
 				4A05E4C51B5A3108000E7305 /* XMLConverter.m in Sources */,
+				09F634D41D5A281600F116DF /* StationsViewController.m in Sources */,
 				09961BFF1D0197D400B1AE08 /* PlaylistCell.m in Sources */,
 				09AD14F11C8DCFD50089B204 /* SocialViewController.m in Sources */,
 				4A05E4981B5A2865000E7305 /* RadioViewController.m in Sources */,
