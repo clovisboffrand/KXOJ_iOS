@@ -15,6 +15,7 @@
 @interface SocialViewController () <UIWebViewDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 {
     IBOutlet UIWebView *adWebView;
+    IBOutlet UIButton *btnVine;
 }
 
 @end
@@ -43,11 +44,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setupBanner];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if ([AppSettings shared].channelId.integerValue == 1) {
+        btnVine.hidden = YES;
+    } else {
+        btnVine.hidden = NO;
+    }
 }
 
 #pragma mark - Setup Ad Banner View

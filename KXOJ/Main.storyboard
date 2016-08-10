@@ -822,6 +822,7 @@
                     <navigationItem key="navigationItem" title="Social" id="tPo-M9-lPB"/>
                     <connections>
                         <outlet property="adWebView" destination="lss-I8-Unr" id="1VU-vq-kbH"/>
+                        <outlet property="btnVine" destination="y49-Bn-4N4" id="JAt-es-1tj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPt-d7-h0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
