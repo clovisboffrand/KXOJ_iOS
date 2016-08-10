@@ -34,8 +34,9 @@
 #define WEBSITE_URL2    @"http://kxoj2.com"
 
 #define PHONE_NUMBER    @"918-460-5965"
-#define SMS_NUMBER1     @"918-512-1009"
-#define SMS_NUMBER2     @"539-302-4945"
+
+#define SMS_NUMBER1     @"918-460-5965"
+#define SMS_NUMBER2     @"918-928-5965"
 
 #define EMAIL_ADDRESS1  @"onair@kxoj.com"
 #define EMAIL_ADDRESS2  @"studio@kxoj2.com"
