@@ -56,6 +56,7 @@
 		09D317331D577C77006E923D /* btn_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317321D577C77006E923D /* btn_phone.png */; };
 		09D317351D577C82006E923D /* btn_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317341D577C82006E923D /* btn_email.png */; };
 		09D317371D577C88006E923D /* btn_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D317361D577C88006E923D /* btn_message.png */; };
+		09DBCB8F1D5CE4CE007D8A41 /* bg_number.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DBCB8E1D5CE4CE007D8A41 /* bg_number.png */; };
 		09F634D41D5A281600F116DF /* StationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F634D31D5A281500F116DF /* StationsViewController.m */; };
 		09F634D81D5A2EDA00F116DF /* img_channel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634D61D5A2EDA00F116DF /* img_channel1.png */; };
 		09F634D91D5A2EDA00F116DF /* img_channel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F634D71D5A2EDA00F116DF /* img_channel2.png */; };
@@ -153,6 +154,7 @@
 		09D317321D577C77006E923D /* btn_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_phone.png; sourceTree = "<group>"; };
 		09D317341D577C82006E923D /* btn_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_email.png; sourceTree = "<group>"; };
 		09D317361D577C88006E923D /* btn_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_message.png; sourceTree = "<group>"; };
+		09DBCB8E1D5CE4CE007D8A41 /* bg_number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_number.png; sourceTree = "<group>"; };
 		09F634D21D5A281500F116DF /* StationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsViewController.h; sourceTree = "<group>"; };
 		09F634D31D5A281500F116DF /* StationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationsViewController.m; sourceTree = "<group>"; };
 		09F634D61D5A2EDA00F116DF /* img_channel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_channel1.png; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				4A05E3C61B5A2865000E7305 /* hourbg.png */,
 				099D50D51D57EC4400C51A5C /* btn_set_alarm.png */,
+				09DBCB8E1D5CE4CE007D8A41 /* bg_number.png */,
 			);
 			name = AlarmTab;
 			sourceTree = "<group>";
@@ -629,6 +632,7 @@
 				09D317311D577C6D006E923D /* btn_website.png in Resources */,
 				090C8EAB1D2F97BE00DB3CBA /* reload_new@2x.png in Resources */,
 				09F634DC1D5A321000F116DF /* img_logo1.png in Resources */,
+				09DBCB8F1D5CE4CE007D8A41 /* bg_number.png in Resources */,
 				099D50D91D58175F00C51A5C /* btn_recent_playlist.png in Resources */,
 				4A05E48E1B5A2865000E7305 /* new-app-background.jpg in Resources */,
 				09D3172D1D577C59006E923D /* btn_vine.png in Resources */,
