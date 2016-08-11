@@ -72,9 +72,7 @@
     
     [self addBanner];
     
-    // Setup timer to get feed content periodicallly.
-    NSTimer *feedTimer = [NSTimer scheduledTimerWithTimeInterval:45 target:self selector:@selector(getFeedContent) userInfo:nil repeats:YES];
-    [feedTimer fire];
+    [self getFeedContent];
     
     // Initialize Reachability
     Reachability *reachability = [Reachability reachabilityWithHostName:@"www.google.com"];
@@ -204,6 +202,12 @@
 #pragma mark - Notification Stream Radio
 
 - (void)reloadRadioStreaming {
+    // Update stations info.
+    ivChannelImage.image = [UIImage imageNamed:[AppSettings shared].logo];
+    ivCoverImage.image = [UIImage imageNamed:[AppSettings shared].logo];
+    lblTitle.text = @"";
+    lblArtist.text = @"";
+    
     AVAudioSession *session = [AVAudioSession sharedInstance];
     
     NSError *setCategoryError = nil;
@@ -258,8 +262,11 @@
         [parser setDelegate:self];
         [parser setShouldResolveExternalEntities:NO];
         [parser parse];
+        
+        [self getFeedContent];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@", error);
+        [self getFeedContent];
     }];
 }
 
