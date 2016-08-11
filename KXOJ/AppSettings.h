@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString *eventsLink;
 @property (nonatomic, strong) NSString *logo;
 @property (nonatomic, strong) NSString *color;
+@property (nonatomic, strong) NSString *defaultAlbum;
 
 + (AppSettings *)shared;
 

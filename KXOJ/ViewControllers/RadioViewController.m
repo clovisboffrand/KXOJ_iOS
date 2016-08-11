@@ -204,7 +204,7 @@
 - (void)reloadRadioStreaming {
     // Update stations info.
     ivChannelImage.image = [UIImage imageNamed:[AppSettings shared].logo];
-    ivCoverImage.image = [UIImage imageNamed:[AppSettings shared].logo];
+    ivCoverImage.image = [UIImage imageNamed:[AppSettings shared].defaultAlbum];
     lblTitle.text = @"";
     lblArtist.text = @"";
     
@@ -326,7 +326,7 @@
     [self updateNowPlayingInfoWithTitle:lblTitle.text artist:lblArtist.text image:nil];
     
     NSString *imageURL = [currentSong[@"songmedia"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    UIImage *placeholder = [UIImage imageNamed:[AppSettings shared].logo];
+    UIImage *placeholder = [UIImage imageNamed:[AppSettings shared].defaultAlbum];
     
     __weak __typeof(self) weakSelf = self;
     [ivCoverImage setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:imageURL]] placeholderImage:placeholder success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {

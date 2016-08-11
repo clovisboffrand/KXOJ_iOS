@@ -19,6 +19,8 @@
 		<string>img_logo1</string>
 		<key>color</key>
 		<string>c4026c</string>
+		<key>default_album</key>
+		<string>kxojdefaultcover</string>
 	</dict>
 	<dict>
 		<key>id</key>
@@ -37,6 +39,8 @@
 		<string>img_logo2</string>
 		<key>color</key>
 		<string>c4026c</string>
+		<key>default_album</key>
+		<string>kxoj2defaultcover</string>
 	</dict>
 </array>
 </plist>

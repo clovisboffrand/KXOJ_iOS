@@ -48,6 +48,7 @@
     self.eventsLink = channelInfo[@"events_link"];
     self.logo = channelInfo[@"logo"];
     self.color = channelInfo[@"color"];
+    self.defaultAlbum = channelInfo[@"default_album"];
 }
 
 @end
