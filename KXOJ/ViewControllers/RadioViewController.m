@@ -21,6 +21,7 @@
     IBOutlet UIView *volumeSlider;
     IBOutlet UIButton *playpausebutton;
     
+    IBOutlet UIImageView *ivChannelImage;
     IBOutlet UIImageView *ivCoverImage;
     IBOutlet UILabel *lblTitle;
     IBOutlet UILabel *lblArtist;
@@ -150,7 +151,7 @@
 
 - (void)updatebuttonstatus {
     if (self.radiosound.rate == 1.0) {
-        [playpausebutton setImage:[UIImage imageNamed:@"btn_pause.png"] forState:UIControlStateNormal];
+        [playpausebutton setImage:[UIImage imageNamed:@"btn_stop.png"] forState:UIControlStateNormal];
     } else {
         [playpausebutton setImage:[UIImage imageNamed:@"btn_play.png"] forState:UIControlStateNormal];
     }
@@ -166,11 +167,6 @@
         [self playCurrentTrack];
         shouldPlay = YES;
     }
-}
-
-- (IBAction)stopTapped:(id)sender {
-    shouldPlay = NO;
-    [self pauseCurrentTrack];
 }
 
 - (IBAction)didTapStations:(id)sender {
@@ -195,7 +191,7 @@
     }
     
     // Update image states to reflect "Pause" option
-    [playpausebutton setImage:[UIImage imageNamed:@"btn_pause"] forState:UIControlStateNormal];
+    [playpausebutton setImage:[UIImage imageNamed:@"btn_stop"] forState:UIControlStateNormal];
 }
 
 - (void)pauseCurrentTrack {
