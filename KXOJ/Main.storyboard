@@ -720,13 +720,6 @@
                                             <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="LSg-gt-8rT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="103" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y49-Bn-4N4">
-                                        <rect key="frame" x="0.0" y="119" width="540" height="36"/>
-                                        <state key="normal" image="btn_vine.png"/>
-                                        <connections>
-                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="uGD-4L-Aau"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="104" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITP-Ii-Kxu">
                                         <rect key="frame" x="0.0" y="158" width="540" height="36"/>
                                         <state key="normal" image="btn_youtube.png"/>
@@ -756,17 +749,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="108" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzi-ct-usR">
-                                        <rect key="frame" x="0.0" y="316" width="540" height="35"/>
+                                        <rect key="frame" x="0.0" y="120" width="540" height="35"/>
                                         <state key="normal" image="btn_message.png"/>
                                         <connections>
                                             <action selector="didTapOtherButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="dR0-PA-A9X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y49-Bn-4N4">
+                                        <rect key="frame" x="0.0" y="315" width="540" height="36"/>
+                                        <state key="normal" image="btn_vine.png"/>
+                                        <connections>
+                                            <action selector="didTapSocialButton:" destination="1SA-Y0-XKz" eventType="touchUpInside" id="uGD-4L-Aau"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xqR-s7-RhY" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="0ng-5H-zaY"/>
                                     <constraint firstItem="mzi-ct-usR" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="245-2t-mlI"/>
-                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="7/9" id="43q-28-VFU"/>
+                                    <constraint firstItem="y49-Bn-4N4" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="17/9" id="43q-28-VFU"/>
                                     <constraint firstItem="ITP-Ii-Kxu" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="9/9" id="CC0-fJ-SEw"/>
                                     <constraint firstItem="tZP-Z9-YGT" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="IG8-MJ-6QQ"/>
                                     <constraint firstItem="e87-pQ-9Fw" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="5/9" id="LHl-sD-VyJ"/>
@@ -780,7 +780,7 @@
                                     <constraint firstItem="XEx-US-cSh" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="ZFv-1A-e4X"/>
                                     <constraint firstItem="XEx-US-cSh" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="Zd4-bh-xby"/>
                                     <constraint firstItem="y49-Bn-4N4" firstAttribute="height" secondItem="MkH-8x-aL2" secondAttribute="height" multiplier="0.1" id="ZkC-pE-9tF"/>
-                                    <constraint firstItem="mzi-ct-usR" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="17/9" id="be2-SC-5bl"/>
+                                    <constraint firstItem="mzi-ct-usR" firstAttribute="centerY" secondItem="MkH-8x-aL2" secondAttribute="centerY" multiplier="7/9" id="be2-SC-5bl"/>
                                     <constraint firstItem="tZP-Z9-YGT" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="bmN-dQ-VU3"/>
                                     <constraint firstItem="y49-Bn-4N4" firstAttribute="centerX" secondItem="MkH-8x-aL2" secondAttribute="centerX" id="dEV-BY-nFn"/>
                                     <constraint firstItem="XEx-US-cSh" firstAttribute="width" secondItem="MkH-8x-aL2" secondAttribute="width" id="dzD-Xa-Sew"/>
@@ -1066,16 +1066,16 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoutoutimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-pV-1Si">
-                                <rect key="frame" x="0.0" y="64" width="600" height="375"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Bta-pV-1Si" secondAttribute="height" multiplier="320:200" id="OlR-4v-dI8"/>
+                                    <constraint firstAttribute="width" secondItem="Bta-pV-1Si" secondAttribute="height" multiplier="1200:800" id="OlR-4v-dI8"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clu-Ju-mSq">
-                                <rect key="frame" x="60" y="439" width="480" height="112"/>
+                                <rect key="frame" x="60" y="464" width="480" height="87"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-tM-zeu">
-                                        <rect key="frame" x="0.0" y="17" width="480" height="17"/>
+                                        <rect key="frame" x="0.0" y="13" width="480" height="14"/>
                                         <state key="normal" title="Listen To An Example" backgroundImage="bg_button_normal.png">
                                             <color key="titleColor" red="0.88627450980392153" green="0.0078431372549019607" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -1085,7 +1085,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-o9-DW1">
-                                        <rect key="frame" x="0.0" y="46" width="480" height="17"/>
+                                        <rect key="frame" x="0.0" y="39" width="480" height="13"/>
                                         <state key="normal" title="Record Your Voice" backgroundImage="bg_button_normal.png">
                                             <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -1095,7 +1095,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znc-nO-q1a">
-                                        <rect key="frame" x="0.0" y="75" width="480" height="17"/>
+                                        <rect key="frame" x="0.0" y="64" width="480" height="13"/>
                                         <state key="normal" title="Preview Your Recording" backgroundImage="bg_button_normal.png">
                                             <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -1105,7 +1105,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-K4-8QP">
-                                        <rect key="frame" x="0.0" y="104" width="480" height="17"/>
+                                        <rect key="frame" x="0.0" y="89" width="480" height="13"/>
                                         <state key="normal" title="Send It In !" backgroundImage="bg_button_normal.png">
                                             <color key="titleColor" red="0.8862745098" green="0.0078431372550000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -1407,6 +1407,6 @@
         <image name="img_logo2.png" width="1600" height="945"/>
         <image name="new-app-background.jpg" width="640" height="960"/>
         <image name="reload_new.png" width="25" height="25"/>
-        <image name="shoutoutimage.png" width="960" height="600"/>
+        <image name="shoutoutimage.png" width="1200" height="800"/>
     </resources>
 </document>
