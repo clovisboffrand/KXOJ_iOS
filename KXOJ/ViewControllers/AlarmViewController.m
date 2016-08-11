@@ -123,8 +123,13 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     if (pickerView.tag == 100) {
-        return [@(row + 1) stringValue];
+        NSInteger hour = row + 1;
+        NSString *title = hour < 10 ? [NSString stringWithFormat:@"0%li", (long)hour] : [@(hour) stringValue];
+        return title;
     } else if (pickerView.tag == 101) {
+        NSInteger min = row;
+        NSString *title = min < 10 ? [NSString stringWithFormat:@"0%li", (long)min] : [@(min) stringValue];
+        return title;
         return [@(row) stringValue];
     } else {
         return row == 0 ? @"AM" : @"PM";

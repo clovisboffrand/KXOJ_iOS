@@ -26,17 +26,18 @@
     
     dateFormatter = [[NSDateFormatter alloc] init];
     
-    NSArray *timearray=[[[NSUserDefaults standardUserDefaults] objectForKey:@"wakeup"] componentsSeparatedByString:@":"];
-    int wakehour = [[timearray objectAtIndex:0]intValue];
-    int wakemin = [[timearray objectAtIndex:1]intValue];
+    NSString *wakeUpTime = [[LocalStorage shared] defaultForKey:@"wakeup"];
+    NSArray *components = [wakeUpTime componentsSeparatedByString:@":"];
+    int wakehour = [components[0] intValue];
+    int wakemin = [components[1] intValue];
     
     NSString *displaymin;
     NSString *displayhour;
     
     if (wakemin < 10) {
-        displaymin = [NSString stringWithFormat:@"0%i",wakemin];
+        displaymin = [NSString stringWithFormat:@"0%i", wakemin];
     } else {
-        displaymin = [NSString stringWithFormat:@"%i",wakemin];
+        displaymin = [NSString stringWithFormat:@"%i", wakemin];
     }
     
     if (wakehour < 12) {
@@ -90,11 +91,8 @@
 #pragma mark - Button Action Methods
 
 - (IBAction)doBack:(id)sender {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"setAlarm" object:self];
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setObject:@"00:00" forKey:@"wakeup"];
-    [prefs synchronize];
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"setAlarm" object:self];
+    [[LocalStorage shared] removeDefaultForKey:@"wakeup"];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
