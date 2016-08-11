@@ -24,7 +24,7 @@
 #define FACEBOOK_URL2   @"http://facebook.com/kxoj2"
 
 #define TWITTER_URL1    @"http://twitter.com/kxoj"
-#define TWITTER_URL2    @"http://twitter.com/kxojhd2"
+#define TWITTER_URL2    @"http://twitter.com/kxoj2"
 
 #define INSTAGRAM_URL   @"http://instagram.com/kxoj2"
 #define VINE_URL        @"https://vine.co/u/1230442394806587392"
